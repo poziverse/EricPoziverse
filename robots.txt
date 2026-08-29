@@ -1,0 +1,9 @@
+# From the Poziverse — robots.txt
+# Article deep links are query-param routes (?id=); crawlers index them via the
+# sitemap entries. No crawl traps here: static site, no auth-gated paths except
+# member surfaces, which render honest public states anyway.
+User-agent: *
+Allow: /
+Disallow: /account.html
+
+Sitemap: https://e16kyyq6.autoclawai.space/sitemap.xml
