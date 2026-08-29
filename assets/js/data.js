@@ -895,11 +895,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-4",
-      "url": "undefined"
+      "label": "The verify discipline behind every lesson",
+      "url": "annex.html?lesson=lx-001"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-4"
   },
   {
     "id": "agent-ecosystem-loop",
@@ -921,11 +921,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-5",
-      "url": "undefined"
+      "label": "The working rhythm behind the Annex",
+      "url": "annex.html?lesson=lx-001"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-5"
   },
   {
     "id": "specialist-subagent-orchestrator",
@@ -947,11 +947,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-6",
-      "url": "undefined"
+      "label": "The orchestration pattern in practice",
+      "url": "annex.html?lesson=lx-005"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-6"
   },
   {
     "id": "closed-network-threat-model",
@@ -973,11 +973,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-7",
-      "url": "undefined"
+      "label": "Security doctrine from the mesh",
+      "url": "article.html?id=year-of-the-mesh"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-7"
   },
   {
     "id": "cron-job-authoring-on-hermes",
@@ -999,11 +999,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-8",
-      "url": "undefined"
+      "label": "The scheduling pattern taught in LX-005",
+      "url": "annex.html?lesson=lx-005"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-8"
   },
   {
     "id": "incident-commander",
@@ -1025,11 +1025,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-9",
-      "url": "undefined"
+      "label": "The ops playbook behind the always-on agent",
+      "url": "article.html?id=hermes-always-on"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-9"
   },
   {
     "id": "drift-audit-multisource",
@@ -1051,11 +1051,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-10",
-      "url": "undefined"
+      "label": "Audits that keep the mesh honest",
+      "url": "article.html?id=year-of-the-mesh"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-10"
   },
   {
     "id": "proxmox-mesh-monitor",
@@ -1077,11 +1077,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-11",
-      "url": "undefined"
+      "label": "The monitoring map in practice",
+      "url": "article.html?id=hermes-always-on"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-11"
   },
   {
     "id": "stewarding-contentious-content",
@@ -1103,11 +1103,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-12",
-      "url": "undefined"
+      "label": "The ethics layer of public replies",
+      "url": "replies.html"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-12"
   },
   {
     "id": "browser-use-automation",
@@ -1129,11 +1129,11 @@ window.POZIVERSE.LIBRARY = [
       "GATE: privacy-scan clean 2026-08-29"
     ],
     "receipt": {
-      "label": "art-2",
-      "url": "undefined"
+      "label": "The capture ladder in practice",
+      "url": "annex.html?lesson=lx-001"
     },
     "featured": false,
-    "art": "undefined"
+    "art": "art-2"
   },
   {
     "id": "humanizer",

@@ -841,6 +841,507 @@
    "extra": {
     "port": "SKILL.md"
    }
+  },
+  {
+   "id": "service-hermes-gateway-wsl",
+   "kind": "service",
+   "name": "Hermes Gateway (The Brain)",
+   "plain": "The always-on gateway that schedules the brain's work and connects it to everything.",
+   "description": "The Hermes gateway is the scheduler and connection hub of the primary brain. Every timed job, health check, and conversation flows through it. It runs in a Linux layer on the desktop and is held by a startup task that survives reboots.",
+   "tags": [
+    "agents",
+    "core",
+    "scheduling",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:hermes-always-on"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/Machine-Inventory.md",
+    "verified": "2026-07-26 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "desktop (WSL2)"
+   }
+  },
+  {
+   "id": "service-hermes-workspace-ui",
+   "kind": "service",
+   "name": "Hermes Workspace UI",
+   "plain": "The daily-driver web interface for working with the brain.",
+   "description": "The browser workspace where the operator talks to the agents, reads their reports, and watches the swarm work. It runs on the brain and serves port 3000.",
+   "tags": [
+    "agents",
+    "interface",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/Machine-Inventory.md",
+    "verified": "2026-07-26 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "desktop (WSL2)"
+   }
+  },
+  {
+   "id": "service-hermes-dashboard-wsl",
+   "kind": "service",
+   "name": "Hermes Dashboard (WSL)",
+   "plain": "The brain's own status dashboard: jobs, sessions, and system state.",
+   "description": "A status view served by the brain showing what is scheduled, what ran, and what the swarm is doing right now. It complements Mission Control with agent-level detail.",
+   "tags": [
+    "agents",
+    "monitoring",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/Machine-Inventory.md",
+    "verified": "2026-07-26 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "desktop (WSL2)"
+   }
+  },
+  {
+   "id": "service-hermes-desktop-app",
+   "kind": "service",
+   "name": "Hermes Desktop App",
+   "plain": "The desktop companion app - a thin client to the brain.",
+   "description": "The official Hermes desktop app on Windows. A thin client that reaches the brain over SSH, deliberately lightweight: no local plug-ins or databases, so the brain stays the single source of state.",
+   "tags": [
+    "agents",
+    "interface",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:hermes-always-on"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/Machine-Inventory.md",
+    "verified": "2026-07-26 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "desktop (Windows)"
+   }
+  },
+  {
+   "id": "service-hermes-swarm",
+   "kind": "service",
+   "name": "The Swarm",
+   "plain": "Eleven named agents with strict roles: planner, researcher, note-keeper, builder, reviewer, and more.",
+   "description": "The swarm is the agent roster. An orchestrator decomposes missions; a researcher, strategist, builder, reviewer, and tester do the work; a knowledge-manager is the only vault writer; an ops-watch, a maintainer, and an inbox-triage keep the lights on; and a coding team runs a real supervisor loop. Four run always-on, the rest on demand. Every role has things it is never allowed to touch.",
+   "tags": [
+    "agents",
+    "roster",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh",
+    "article:hermes-always-on"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/Machine-Inventory.md",
+    "verified": "2026-07-26 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "desktop (WSL2)"
+   }
+  },
+  {
+   "id": "service-npm-proxy",
+   "kind": "service",
+   "name": "Nginx Proxy Manager",
+   "plain": "The public front door: TLS certificates and routing for 25 services.",
+   "description": "Nginx Proxy Manager terminates TLS and routes public hostnames to the right container. A live audit verified 25 of 25 proxy hosts healthy and cleaned 31 stale rows. Public names like litellm.0reliance.com land here first.",
+   "tags": [
+    "network",
+    "public",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 133"
+   }
+  },
+  {
+   "id": "service-ollama-stack",
+   "kind": "service",
+   "name": "The CT 122 App Stack",
+   "plain": "A 16-port stack of self-hosted apps: AI serving, notes, automation, vector search, and image generation.",
+   "description": "One container running sixteen connected apps: Ollama for AI serving, Memos for notes, n8n for automation, OpenWebUI for chat, Trilium and Linkding for knowledge, Qdrant for vector search, ComfyUI for images, Langflow, Pipecat, a browser tool, a wiki, Storm, Fabric, and Maestro. The Swiss-army container of the cluster.",
+   "tags": [
+    "self-hosted",
+    "apps",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 122"
+   }
+  },
+  {
+   "id": "service-litellm-ct123",
+   "kind": "service",
+   "name": "LiteLLM (CT 123)",
+   "plain": "The model traffic controller on its own container, with a public hostname.",
+   "description": "Runs LiteLLM behind its own public hostname. One address in front of many model providers, automatic failover between them, and the routing rules documented in the field guide. It is the backup path when Ollama Cloud runs dry.",
+   "tags": [
+    "ai",
+    "routing",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:llm-routing-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 123"
+   }
+  },
+  {
+   "id": "service-honcho-ct107",
+   "kind": "service",
+   "name": "Honcho Memory Server",
+   "plain": "The long-term memory service that lets agents remember between conversations.",
+   "description": "Honcho stores cross-session context for the agents. The mesh's memory is three-layered - session state with each agent, Honcho for cross-session context, and the vault for project facts - and Honcho is the middle layer.",
+   "tags": [
+    "memory",
+    "agents",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:hermes-always-on"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 107"
+   }
+  },
+  {
+   "id": "service-gitea-mesh",
+   "kind": "service",
+   "name": "Gitea (CT 201)",
+   "plain": "A self-hosted code server - the mesh's private GitHub.",
+   "description": "Gitea stores the mesh's repositories on home hardware, LAN-only by choice. Version control stays local-first: the same workflows as any big platform, on machines you control.",
+   "tags": [
+    "code",
+    "self-hosted",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 201"
+   }
+  },
+  {
+   "id": "service-mail-mesh",
+   "kind": "service",
+   "name": "Mail Server (CT 105)",
+   "plain": "A self-hosted mail server: sending and receiving via Maddy, with SnappyMail webmail.",
+   "description": "Maddy handles sending and receiving mail, and SnappyMail provides the web interface. Self-hosting email is the mesh's most old-school flex - and its most demanding service.",
+   "tags": [
+    "mail",
+    "self-hosted",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 105"
+   }
+  },
+  {
+   "id": "service-synapse-mesh",
+   "kind": "service",
+   "name": "Synapse (CT 204)",
+   "plain": "A self-hosted chat server speaking the Matrix protocol, LAN-only.",
+   "description": "Synapse serves Matrix chat on the local network. Part of the self-hosted communication layer alongside the mail server.",
+   "tags": [
+    "chat",
+    "self-hosted",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 204"
+   }
+  },
+  {
+   "id": "service-stacks-mesh",
+   "kind": "service",
+   "name": "Media Stack (CT 205)",
+   "plain": "The self-hosted media management stack: VPN, indexers, and download automation.",
+   "description": "A media stack with VPN, Prowlarr, Transmission, and companions - the media-automation shelf of the cluster.",
+   "tags": [
+    "media",
+    "self-hosted",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 205"
+   }
+  },
+  {
+   "id": "service-proxmox-backup",
+   "kind": "service",
+   "name": "Proxmox Backup Server (CT 106)",
+   "plain": "The backup tier: point-in-time snapshots of the containers that hold everything together.",
+   "description": "PBS backs up the Proxmox containers so any box can be restored. The quiet insurance policy of the whole cluster - and the reason experiments are cheap.",
+   "tags": [
+    "backup",
+    "safety",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 106"
+   }
+  },
+  {
+   "id": "service-tools-gateway",
+   "kind": "service",
+   "name": "Tools Gateway (CT 402)",
+   "plain": "The LAN-only gateway container for internal tools.",
+   "description": "A landing container for internal tools that stay off the public internet. LAN-only by design.",
+   "tags": [
+    "tools",
+    "gateway",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 402"
+   }
+  },
+  {
+   "id": "service-tsidp",
+   "kind": "service",
+   "name": "Tailscale Identity Provider (CT 104)",
+   "plain": "An identity provider for the private network - device sign-ins without a third party.",
+   "description": "Runs the Tailscale identity flow so devices and services can prove who they are inside the tailnet. One more piece of the self-hosted identity layer.",
+   "tags": [
+    "identity",
+    "network",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 104"
+   }
+  },
+  {
+   "id": "service-docker-apps-ct132",
+   "kind": "service",
+   "name": "Docker Apps (CT 132)",
+   "plain": "A container host for personal apps: notes, docs, quick capture, and a command center.",
+   "description": "Four personal apps on one container: EricNotes, a doc editor, Blinko for quick capture, and a command center UI. The shelf that keeps experiments off the production boxes.",
+   "tags": [
+    "apps",
+    "self-hosted",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/0RELIANCE-COM-SERVICE-STATUS.md",
+    "verified": "2026-07-06 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 132"
+   }
+  },
+  {
+   "id": "service-hud-mesh",
+   "kind": "service",
+   "name": "HUD Mesh (retired)",
+   "plain": "The old heads-up-display container - retired and documented.",
+   "description": "CT 203 was destroyed and its role absorbed elsewhere. Kept in the directory as an honest retired record: the fleet's history is part of its map.",
+   "tags": [
+    "retired",
+    "mesh"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "resting",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure/Machine-Inventory.md",
+    "verified": "2026-07-26 (vault)"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "host": "CT 203"
+   }
   }
  ]
 }

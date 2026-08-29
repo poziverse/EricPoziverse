@@ -53,7 +53,7 @@ function walk(dir, rel, depth) {
         detail: null,
         tags: [cat, "skill"], category: cat,
         level: "practitioner", status: pub ? "live" : "draft",
-        appearsIn: pub ? ["library.html", (pub.receipt && pub.receipt.url) || "library.html"] : [],
+        appearsIn: pub ? ["library.html", (pub.receipt && pub.receipt.url) || "library.html"].filter(Boolean) : [],
         related: [], aliases: [],
         glossary: null,
         provenance: { source: "vault " + rel + "/SKILL.md", verified: today },

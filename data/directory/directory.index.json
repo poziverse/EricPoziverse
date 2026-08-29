@@ -1,24 +1,24 @@
 {
- "generatedAt": "2026-08-29T21:50:34.149Z",
+ "generatedAt": "2026-08-29T22:09:21.353Z",
  "counts": {
-  "records": 482,
-  "indexWords": 2413
+  "records": 500,
+  "indexWords": 2450
  },
  "byKind": {
   "resource": 12,
-  "service": 29,
+  "service": 47,
   "skill": 401,
   "tool": 40
  },
  "byStatus": {
-  "live": 93,
+  "live": 110,
+  "resting": 2,
   "draft": 382,
   "beta": 4,
-  "resting": 1,
   "planned": 2
  },
  "byCategory": {
-  "infrastructure": 53,
+  "infrastructure": 71,
   "creation": 15,
   "craft": 13,
   "adhd": 1,
@@ -172,6 +172,8 @@
    "resource-network-topology-doc",
    "service-tailscaled",
    "service-zerotier-one",
+   "service-npm-proxy",
+   "service-tsidp",
    "skill-cross-substrate-transport-bypass",
    "skill-inter-agent-communication-via-human-relay",
    "skill-mesh-proxy-gateway",
@@ -190,6 +192,7 @@
   ],
   "system": [
    "resource-network-topology-doc",
+   "service-hermes-dashboard-wsl",
    "skill-command-center",
    "skill-continuous-learning-v2",
    "skill-hyperframes-video",
@@ -218,6 +221,8 @@
   ],
   "everything": [
    "resource-network-topology-doc",
+   "service-hermes-gateway-wsl",
+   "service-proxmox-backup",
    "skill-configure-ecc",
    "skill-find-animation-opportunities"
   ],
@@ -303,6 +308,8 @@
   ],
   "public": [
    "resource-creator-research-index",
+   "service-npm-proxy",
+   "service-litellm-ct123",
    "skill-deploy-public-host-verification",
    "skill-gluetun-vpn-kill-switch",
    "tool-github"
@@ -534,6 +541,8 @@
   ],
   "notes": [
    "resource-vault-ontology-map",
+   "service-ollama-stack",
+   "service-docker-apps-ct132",
    "skill-obsidian",
    "skill-powerpoint"
   ],
@@ -662,6 +671,7 @@
   ],
   "swarm": [
    "resource-swarm-operations-guide",
+   "service-hermes-swarm",
    "skill-drift-audit-multisource",
    "skill-km-agent-drift-audit",
    "skill-swarm-management",
@@ -673,10 +683,12 @@
    "skill-third-party-project-intake"
   ],
   "eleven": [
-   "resource-swarm-operations-guide"
+   "resource-swarm-operations-guide",
+   "service-hermes-swarm"
   ],
   "named": [
-   "resource-swarm-operations-guide"
+   "resource-swarm-operations-guide",
+   "service-hermes-swarm"
   ],
   "agents": [
    "resource-swarm-operations-guide",
@@ -684,6 +696,12 @@
    "service-kanban-api",
    "service-a2a-ct207",
    "service-vault-search-mcp",
+   "service-hermes-gateway-wsl",
+   "service-hermes-workspace-ui",
+   "service-hermes-dashboard-wsl",
+   "service-hermes-desktop-app",
+   "service-hermes-swarm",
+   "service-honcho-ct107",
    "skill-adhd",
    "skill-honcho-self-hosted",
    "skill-langgraph-deployment",
@@ -708,6 +726,7 @@
    "service-kanban-api",
    "service-langgraph-supervisor",
    "service-langgraph-reviewer",
+   "service-hermes-gateway-wsl",
    "skill-cross-session-work-review",
    "skill-kanban-orchestrator",
    "skill-multi-agent-sqlite-contention",
@@ -726,6 +745,7 @@
   "model": [
    "resource-model-fleet-build-log",
    "resource-orchestration-tiering-research",
+   "service-litellm-ct123",
    "skill-closed-network-threat-model",
    "skill-autoclaw-troubleshooting",
    "skill-hermes-mcp-server-configuration",
@@ -883,6 +903,8 @@
   ],
   "stack": [
    "resource-creator-stack-blueprint",
+   "service-ollama-stack",
+   "service-stacks-mesh",
    "skill-imagerouter-integration",
    "skill-llm-shim-pattern",
    "skill-wsl-mcp-stack-wiring",
@@ -917,6 +939,7 @@
   ],
   "dashboard": [
    "service-dashboard-server",
+   "service-hermes-dashboard-wsl",
    "skill-command-center",
    "skill-visual-artifact-decision-tree",
    "skill-ct207-chrome-deploy-verifier",
@@ -940,6 +963,11 @@
    "service-pulse-agent",
    "service-marvin-visualizer",
    "service-arcade-cloud",
+   "service-honcho-ct107",
+   "service-gitea-mesh",
+   "service-mail-mesh",
+   "service-synapse-mesh",
+   "service-proxmox-backup",
    "skill-ct207-surgical-chrome-patch",
    "skill-ct207-iframe-proxy-recipe",
    "skill-hermes-mcp-server-configuration",
@@ -1000,6 +1028,7 @@
   "web": [
    "service-dashboard-server",
    "service-dsh",
+   "service-hermes-workspace-ui",
    "skill-animation-vocabulary",
    "skill-direct-http-source-verification",
    "skill-research-ingest",
@@ -1044,6 +1073,7 @@
   ],
   "status": [
    "service-dashboard-server",
+   "service-hermes-dashboard-wsl",
    "skill-hermes-webui-ops"
   ],
   "mesh": [
@@ -1076,17 +1106,17 @@
    "service-cron",
    "service-Service",
    "service-Category",
-   "skill-cron-job-authoring-on-hermes",
-   "skill-decommissioned-service-teardown",
-   "skill-email-stack-decision-tree",
-   "skill-gitea-mesh-ops",
-   "skill-home-assistant-mesh-integration",
-   "skill-infra-repair",
-   "skill-llm-provider-routing-on-proxiverse",
-   "skill-mcp-repair",
-   "skill-mcp-server-development",
-   "skill-multi-agent-orchestration-protocol",
-   "skill-multi-machine-skill-propagation"
+   "service-hermes-gateway-wsl",
+   "service-hermes-workspace-ui",
+   "service-hermes-dashboard-wsl",
+   "service-hermes-desktop-app",
+   "service-hermes-swarm",
+   "service-npm-proxy",
+   "service-ollama-stack",
+   "service-litellm-ct123",
+   "service-honcho-ct107",
+   "service-gitea-mesh",
+   "service-mail-mesh"
   ],
   "networked": [
    "service-dashboard-server",
@@ -1234,6 +1264,7 @@
    "service-marketplace-watcher",
    "service-vault-search-mcp",
    "service-vault-search-server",
+   "service-ollama-stack",
    "skill-find-animation-opportunities",
    "skill-gif-search",
    "skill-huggingface-hub",
@@ -1303,6 +1334,7 @@
   ],
   "personal": [
    "service-today-bridge",
+   "service-docker-apps-ct132",
    "skill-google-oauth-desktop-flow",
    "skill-marketplace-watcher",
    "skill-domain-scoping-and-tooling-plan"
@@ -1396,6 +1428,7 @@
   ],
   "between": [
    "service-nats",
+   "service-honcho-ct107",
    "skill-desktop-laptop-bridge",
    "skill-unified-memory",
    "tool-n8n",
@@ -1403,6 +1436,7 @@
   ],
   "services": [
    "service-nats",
+   "service-npm-proxy",
    "skill-ct207-service-stabilization",
    "skill-drift-audit-multisource",
    "skill-mesh-proxy-gateway",
@@ -1493,12 +1527,14 @@
   ],
   "builder": [
    "service-langgraph-coder",
+   "service-hermes-swarm",
    "skill-loop-engineering",
    "tool-n8n",
    "tool-langgraph"
   ],
   "code": [
    "service-langgraph-coder",
+   "service-gitea-mesh",
    "skill-claude-code",
    "skill-configure-ecc",
    "skill-buzz-identity-pairing",
@@ -1520,11 +1556,13 @@
   ],
   "command": [
    "service-langgraph-coder",
+   "service-docker-apps-ct132",
    "skill-slash-commands",
    "skill-pozi-orchestrator"
   ],
   "reviewer": [
    "service-langgraph-reviewer",
+   "service-hermes-swarm",
    "skill-langgraph-deployment",
    "tool-langgraph"
   ],
@@ -1538,6 +1576,10 @@
   ],
   "hermes": [
    "service-hermes-gateway",
+   "service-hermes-gateway-wsl",
+   "service-hermes-workspace-ui",
+   "service-hermes-dashboard-wsl",
+   "service-hermes-desktop-app",
    "skill-hermes-agent",
    "skill-hermes-custom-provider-setup",
    "skill-glassy-manim-operations",
@@ -1572,15 +1614,13 @@
    "skill-tui-widgets",
    "skill-register-hermes-tool",
    "skill-browser-use-automation",
-   "skill-hermes-browser-tool-reality-check",
-   "skill-hermes-profile-architecture",
-   "skill-hermes-terminal-backends",
-   "skill-hermes-upgrade-investigation",
-   "skill-hermes-wsl-troubleshooting"
+   "skill-hermes-browser-tool-reality-check"
   ],
   "gateway": [
    "service-hermes-gateway",
    "service-godview-gateway",
+   "service-hermes-gateway-wsl",
+   "service-tools-gateway",
    "skill-gluetun-vpn-kill-switch",
    "skill-hermes-gateway-dispatcher-troubleshoot",
    "skill-hermes-env-var-naming-trap",
@@ -1599,6 +1639,7 @@
   ],
   "chat": [
    "service-hermes-gateway",
+   "service-synapse-mesh",
    "skill-buzz-media-attachments",
    "skill-ct207-mission-control-debug"
   ],
@@ -1608,6 +1649,7 @@
   ],
   "honcho": [
    "service-honcho-mesh",
+   "service-honcho-ct107",
    "skill-context-evaluation",
    "skill-honcho-self-hosted",
    "skill-memory-management",
@@ -1615,6 +1657,7 @@
   ],
   "memory": [
    "service-honcho-mesh",
+   "service-honcho-ct107",
    "skill-context-evaluation",
    "skill-context-source-audit",
    "skill-memory-management",
@@ -1623,6 +1666,7 @@
   ],
   "connects": [
    "service-honcho-mesh",
+   "service-hermes-gateway-wsl",
    "tool-tailscale"
   ],
   "long-term-memory": [
@@ -1631,6 +1675,7 @@
   "service": [
    "service-honcho-mesh",
    "service-Service",
+   "service-honcho-ct107",
    "skill-broken-service-diagnose-and-replace",
    "skill-ct207-down-report-diagnostic",
    "skill-ct207-iframe-proxy-recipe",
@@ -1742,6 +1787,7 @@
   ],
   "tools": [
    "service-godview-gateway",
+   "service-tools-gateway",
    "skill-ct207-memory-hungry-tool-deployment",
    "skill-dual-environment-mcp-coordination",
    "skill-gws-mcp",
@@ -1761,6 +1807,7 @@
   ],
   "serving": [
    "service-graphify-mcp-mc",
+   "service-ollama-stack",
    "tool-ollama",
    "tool-vllm"
   ],
@@ -1798,6 +1845,7 @@
   ],
   "monitoring": [
    "service-pulse-agent",
+   "service-hermes-dashboard-wsl",
    "skill-command-center",
    "skill-pulse-monitoring",
    "skill-swap-management",
@@ -1813,6 +1861,7 @@
   ],
   "lets": [
    "service-herdr",
+   "service-honcho-ct107",
    "tool-yutu",
    "tool-mcp"
   ],
@@ -1965,6 +2014,7 @@
   ],
   "sessions": [
    "service-dsh",
+   "service-hermes-dashboard-wsl",
    "skill-continuous-learning-v2",
    "skill-context-source-audit",
    "skill-cross-session-work-review",
@@ -2017,6 +2067,7 @@
   "tailscale": [
    "service-tailscaled",
    "service-zerotier-one",
+   "service-tsidp",
    "skill-cloud-vendor-capability-audit",
    "skill-hermes-webui-ops",
    "skill-tailscale-mesh-relay-patterns",
@@ -2024,6 +2075,8 @@
   ],
   "private": [
    "service-tailscaled",
+   "service-gitea-mesh",
+   "service-tsidp",
    "tool-gitea",
    "tool-tailscale"
   ],
@@ -2040,6 +2093,7 @@
   ],
   "vpn": [
    "service-tailscaled",
+   "service-stacks-mesh",
    "skill-gluetun-vpn-kill-switch",
    "tool-tailscale",
    "tool-wireguard"
@@ -2054,6 +2108,7 @@
   ],
   "backup": [
    "service-zerotier-one",
+   "service-proxmox-backup",
    "skill-cron-job-management",
    "skill-ct207-deploy-bundle-to-chrome",
    "skill-proxmox-backup-server-setup",
@@ -2109,6 +2164,7 @@
   ],
   "jobs": [
    "service-cron",
+   "service-hermes-dashboard-wsl",
    "skill-cron-job-authoring-on-hermes",
    "skill-cron-job-management",
    "skill-knowledge-system-audit"
@@ -2135,6 +2191,513 @@
    "skill-external-skills-distillation",
    "skill-installed-skills-substrate-integration",
    "tool-openclaw"
+  ],
+  "brain": [
+   "service-hermes-gateway-wsl",
+   "service-hermes-workspace-ui",
+   "service-hermes-desktop-app",
+   "tool-hermes",
+   "tool-minimax-m3"
+  ],
+  "always-on": [
+   "service-hermes-gateway-wsl"
+  ],
+  "schedules": [
+   "service-hermes-gateway-wsl"
+  ],
+  "brain's": [
+   "service-hermes-gateway-wsl",
+   "service-hermes-dashboard-wsl"
+  ],
+  "core": [
+   "service-hermes-gateway-wsl",
+   "skill-core-documentation-audit",
+   "tool-hermes"
+  ],
+  "scheduling": [
+   "service-hermes-gateway-wsl",
+   "skill-cron-job-management"
+  ],
+  "workspace": [
+   "service-hermes-workspace-ui",
+   "skill-glassy-i2v-raw-to-workspace",
+   "skill-gws-mcp",
+   "skill-hermes-agent-template",
+   "skill-vault-workspace-scaffolding",
+   "skill-swarm-session-503-diagnostic"
+  ],
+  "daily-driver": [
+   "service-hermes-workspace-ui"
+  ],
+  "interface": [
+   "service-hermes-workspace-ui",
+   "service-hermes-desktop-app"
+  ],
+  "working": [
+   "service-hermes-workspace-ui",
+   "skill-case-prep-output-discipline",
+   "skill-gluetun-vpn-kill-switch",
+   "skill-user-manual-maintenance",
+   "skill-hermes-oauth-account-isolation",
+   "skill-hermes-windows-runtime"
+  ],
+  "wsl": [
+   "service-hermes-dashboard-wsl",
+   "skill-hermes-gateway-dispatcher-troubleshoot",
+   "skill-hermes-substrate-router",
+   "skill-multi-substrate-hermes-routing",
+   "skill-wsl-mcp-stack-wiring",
+   "skill-hermes-wsl-troubleshooting"
+  ],
+  "state": [
+   "service-hermes-dashboard-wsl",
+   "skill-context-source-audit",
+   "skill-locked-state-workflow",
+   "skill-multi-agent-sqlite-contention",
+   "skill-wiki-audit",
+   "skill-substrate-migration-cleanup"
+  ],
+  "desktop": [
+   "service-hermes-desktop-app",
+   "skill-autoclaw-troubleshooting",
+   "skill-cua-windows-ops",
+   "skill-desktop-laptop-bridge",
+   "skill-four-machine-inventory",
+   "skill-hermes-windows-desktop-ops",
+   "skill-multi-substrate-hermes-routing",
+   "skill-google-api-from-refresh-token",
+   "skill-google-oauth-desktop-flow",
+   "skill-hermes-desktop-plugins",
+   "skill-inspecting-hermes-desktop-dom"
+  ],
+  "app": [
+   "service-hermes-desktop-app",
+   "service-ollama-stack",
+   "skill-ai-video-mcp-operations",
+   "skill-hermes-windows-desktop-ops",
+   "skill-system-consolidation",
+   "skill-hermes-desktop-plugins",
+   "skill-playwright-screen-recording",
+   "tool-glassy"
+  ],
+  "companion": [
+   "service-hermes-desktop-app",
+   "skill-youtube-transcript-fallback"
+  ],
+  "thin": [
+   "service-hermes-desktop-app",
+   "skill-dual-environment-mcp-coordination"
+  ],
+  "client": [
+   "service-hermes-desktop-app",
+   "skill-buzz-community-join"
+  ],
+  "strict": [
+   "service-hermes-swarm",
+   "skill-design-system-enforcement"
+  ],
+  "roles": [
+   "service-hermes-swarm",
+   "skill-pi-coding-agent-setup"
+  ],
+  "planner": [
+   "service-hermes-swarm"
+  ],
+  "researcher": [
+   "service-hermes-swarm",
+   "skill-deepseek-research"
+  ],
+  "note-keeper": [
+   "service-hermes-swarm"
+  ],
+  "more": [
+   "service-hermes-swarm",
+   "skill-inter-agent-communication-via-human-relay"
+  ],
+  "roster": [
+   "service-hermes-swarm"
+  ],
+  "nginx": [
+   "service-npm-proxy",
+   "skill-lxc-webserver-pitfalls"
+  ],
+  "proxy": [
+   "service-npm-proxy",
+   "skill-ct207-dashboard-api-ops",
+   "skill-ct207-iframe-proxy-recipe",
+   "skill-docker-compose-substrate-deployment",
+   "skill-godview-gateway-ops",
+   "skill-proxiverse-litellm-ops",
+   "skill-youtube-transcript-fallback",
+   "skill-mesh-proxy-gateway",
+   "tool-litellm"
+  ],
+  "manager": [
+   "service-npm-proxy"
+  ],
+  "front": [
+   "service-npm-proxy",
+   "tool-litellm"
+  ],
+  "door": [
+   "service-npm-proxy"
+  ],
+  "tls": [
+   "service-npm-proxy"
+  ],
+  "certificates": [
+   "service-npm-proxy"
+  ],
+  "routing": [
+   "service-npm-proxy",
+   "service-litellm-ct123",
+   "skill-kanban-orchestrator",
+   "skill-llm-provider-routing-on-proxiverse",
+   "skill-multi-substrate-hermes-routing",
+   "skill-self-host-mail-server",
+   "skill-hermes-profile-architecture",
+   "skill-swarm-orchestration-workflow",
+   "tool-litellm",
+   "tool-claude"
+  ],
+  "port": [
+   "service-ollama-stack"
+  ],
+  "self-hosted": [
+   "service-ollama-stack",
+   "service-gitea-mesh",
+   "service-mail-mesh",
+   "service-synapse-mesh",
+   "service-stacks-mesh",
+   "service-docker-apps-ct132",
+   "skill-buzz-community-join",
+   "skill-buzz-self-hosting",
+   "skill-email-stack-decision-tree",
+   "skill-honcho-self-hosted",
+   "skill-self-host-mail-server",
+   "skill-youtube-channel-management-on-mesh",
+   "skill-secrets-on-mesh",
+   "tool-gitea"
+  ],
+  "apps": [
+   "service-ollama-stack",
+   "service-docker-apps-ct132",
+   "skill-third-party-windows-app-diagnosis",
+   "skill-production-audit",
+   "skill-tui-widgets",
+   "skill-dogfood"
+  ],
+  "automation": [
+   "service-ollama-stack",
+   "service-stacks-mesh",
+   "skill-browser-use-automation",
+   "tool-n8n",
+   "tool-playwright"
+  ],
+  "vector": [
+   "service-ollama-stack",
+   "skill-ct207-memory-hungry-tool-deployment"
+  ],
+  "image": [
+   "service-ollama-stack",
+   "skill-agnes-ai-integration",
+   "skill-image-gen-cloud-routing",
+   "skill-imagerouter-integration",
+   "skill-media"
+  ],
+  "generation": [
+   "service-ollama-stack",
+   "skill-ai-video-mcp-operations",
+   "skill-design",
+   "skill-design-system",
+   "skill-image-gen-cloud-routing",
+   "skill-imagerouter-integration",
+   "skill-media",
+   "skill-heartmula",
+   "skill-minimax-video-mcp"
+  ],
+  "litellm": [
+   "service-litellm-ct123",
+   "skill-image-gen-cloud-routing",
+   "skill-infra-repair",
+   "skill-proxiverse-litellm-ops",
+   "tool-litellm"
+  ],
+  "traffic": [
+   "service-litellm-ct123",
+   "tool-litellm"
+  ],
+  "controller": [
+   "service-litellm-ct123",
+   "tool-litellm"
+  ],
+  "container": [
+   "service-litellm-ct123",
+   "service-tools-gateway",
+   "service-docker-apps-ct132",
+   "service-hud-mesh",
+   "skill-stacks-mesh-complementary-services"
+  ],
+  "hostname": [
+   "service-litellm-ct123",
+   "skill-deploy-public-host-verification"
+  ],
+  "long-term": [
+   "service-honcho-ct107",
+   "tool-honcho"
+  ],
+  "remember": [
+   "service-honcho-ct107"
+  ],
+  "conversations": [
+   "service-honcho-ct107"
+  ],
+  "gitea": [
+   "service-gitea-mesh",
+   "skill-gitea-mesh-ops",
+   "skill-github-dual-host-routing",
+   "tool-gitea"
+  ],
+  "mesh's": [
+   "service-gitea-mesh",
+   "tool-minimax-m3",
+   "tool-deepseek"
+  ],
+  "github": [
+   "service-gitea-mesh",
+   "skill-cloud-vendor-capability-audit",
+   "skill-codebase-inspection",
+   "skill-github-agent-ops",
+   "skill-github-auth",
+   "skill-github-code-review",
+   "skill-github-dual-host-routing",
+   "skill-github-issues",
+   "skill-github-pr-workflow",
+   "skill-github-rate-limits",
+   "skill-github-repo-management",
+   "skill-github",
+   "skill-research-ingest",
+   "skill-skill-scout",
+   "skill-third-party-project-intake",
+   "tool-gitea",
+   "tool-github"
+  ],
+  "mail": [
+   "service-mail-mesh",
+   "skill-self-host-mail-server",
+   "skill-maddy-native-install-lxc"
+  ],
+  "sending": [
+   "service-mail-mesh"
+  ],
+  "receiving": [
+   "service-mail-mesh",
+   "skill-context-evaluation"
+  ],
+  "maddy": [
+   "service-mail-mesh",
+   "skill-self-host-mail-server",
+   "skill-maddy-native-install-lxc",
+   "skill-tailscale-mesh-relay-patterns"
+  ],
+  "snappymail": [
+   "service-mail-mesh"
+  ],
+  "webmail": [
+   "service-mail-mesh"
+  ],
+  "synapse": [
+   "service-synapse-mesh"
+  ],
+  "speaking": [
+   "service-synapse-mesh"
+  ],
+  "matrix": [
+   "service-synapse-mesh"
+  ],
+  "protocol": [
+   "service-synapse-mesh",
+   "skill-hermes-mcp-server-configuration",
+   "skill-multi-agent-orchestration-protocol",
+   "skill-deepseek-research",
+   "skill-deepseek-planning",
+   "skill-mcp-ecosystem-research",
+   "skill-node-inspect-debugger",
+   "tool-mcp",
+   "tool-cdp"
+  ],
+  "lan-only": [
+   "service-synapse-mesh",
+   "service-tools-gateway"
+  ],
+  "media": [
+   "service-stacks-mesh",
+   "skill-banner-design",
+   "skill-buzz-media-attachments",
+   "skill-media",
+   "skill-media-pipeline-monitor",
+   "skill-gif-search",
+   "skill-heartmula",
+   "skill-media-pipeline",
+   "skill-minimax-video-pipeline",
+   "skill-songsee",
+   "skill-youtube-content",
+   "skill-youtube-transcript-fallback",
+   "tool-ffmpeg"
+  ],
+  "management": [
+   "service-stacks-mesh",
+   "skill-brand",
+   "skill-hermes-webui-ops",
+   "skill-kanban-system-admin",
+   "skill-memory-management",
+   "skill-e2e-testing",
+   "skill-mesh-proxy-gateway"
+  ],
+  "indexers": [
+   "service-stacks-mesh",
+   "skill-ct207-memory-hungry-tool-deployment"
+  ],
+  "download": [
+   "service-stacks-mesh",
+   "skill-gif-search",
+   "skill-huggingface-hub"
+  ],
+  "proxmox": [
+   "service-proxmox-backup",
+   "skill-agent-substrate-deployment",
+   "skill-ct207-deploy-bundle-to-chrome",
+   "skill-deploy-public-host-verification",
+   "skill-four-machine-inventory",
+   "skill-gluetun-vpn-kill-switch",
+   "skill-infra-repair",
+   "skill-lxc-ssh-fallback",
+   "skill-proxmox-lxc-drift-audit",
+   "skill-proxmox-outage-recovery",
+   "skill-pulse-monitoring",
+   "skill-remote-script-patch-deploy",
+   "skill-self-host-mail-server",
+   "skill-hermes-remote-process-resilience",
+   "skill-maddy-native-install-lxc",
+   "skill-proxmox-backup-server-setup",
+   "tool-proxmox"
+  ],
+  "tier": [
+   "service-proxmox-backup",
+   "skill-pozi-kanban-upgrade"
+  ],
+  "point-in-time": [
+   "service-proxmox-backup"
+  ],
+  "snapshots": [
+   "service-proxmox-backup"
+  ],
+  "containers": [
+   "service-proxmox-backup",
+   "skill-infra-repair",
+   "skill-zimaos-service-ops"
+  ],
+  "hold": [
+   "service-proxmox-backup"
+  ],
+  "together": [
+   "service-proxmox-backup"
+  ],
+  "safety": [
+   "service-proxmox-backup",
+   "skill-legal-output-guard"
+  ],
+  "internal": [
+   "service-tools-gateway"
+  ],
+  "identity": [
+   "service-tsidp",
+   "skill-brand",
+   "skill-design"
+  ],
+  "provider": [
+   "service-tsidp",
+   "skill-autoclaw-troubleshooting",
+   "skill-llm-provider-routing-on-proxiverse",
+   "skill-minimax-provider",
+   "skill-hermes-profile-architecture"
+  ],
+  "device": [
+   "service-tsidp"
+  ],
+  "sign-ins": [
+   "service-tsidp"
+  ],
+  "without": [
+   "service-tsidp",
+   "skill-ct207-memory-hungry-tool-deployment",
+   "skill-github-agent-ops",
+   "skill-media-pipeline",
+   "skill-plan-canvas",
+   "skill-pro-se-assistant",
+   "skill-substrate-migration-cleanup",
+   "skill-verify-claim-before-fixing"
+  ],
+  "third": [
+   "service-tsidp"
+  ],
+  "party": [
+   "service-tsidp"
+  ],
+  "docker": [
+   "service-docker-apps-ct132",
+   "skill-buzz-self-hosting",
+   "skill-docker-compose-substrate-deployment",
+   "skill-pulse-monitoring",
+   "skill-zimaos-service-ops",
+   "skill-lxc-webserver-pitfalls",
+   "skill-maddy-native-install-lxc",
+   "skill-hermes-terminal-backends",
+   "skill-substrate-migration-cleanup"
+  ],
+  "host": [
+   "service-docker-apps-ct132",
+   "skill-hermes-substrate-router",
+   "skill-locked-state-workflow",
+   "skill-lxc-ssh-fallback",
+   "skill-github-dual-host-routing",
+   "skill-kindspectre-browser-verify",
+   "skill-proxmox-backup-server-setup"
+  ],
+  "docs": [
+   "service-docker-apps-ct132",
+   "skill-core-documentation-audit",
+   "skill-google-api-from-refresh-token",
+   "skill-google-workspace",
+   "skill-research-vendor-docs-mintlify-extraction"
+  ],
+  "quick": [
+   "service-docker-apps-ct132"
+  ],
+  "capture": [
+   "service-docker-apps-ct132",
+   "skill-agent-introspection-debugging",
+   "skill-kindspectre-browser-verify",
+   "skill-media-pipeline"
+  ],
+  "center": [
+   "service-docker-apps-ct132"
+  ],
+  "hud": [
+   "service-hud-mesh"
+  ],
+  "retired": [
+   "service-hud-mesh"
+  ],
+  "old": [
+   "service-hud-mesh",
+   "skill-kanban-admin-toolbar"
+  ],
+  "heads-up-display": [
+   "service-hud-mesh"
+  ],
+  "documented": [
+   "service-hud-mesh"
   ],
   "adhd": [
    "skill-adhd"
@@ -2222,11 +2785,6 @@
    "skill-glassy-manim-operations",
    "skill-google-api-from-refresh-token",
    "skill-plankton-code-quality"
-  ],
-  "capture": [
-   "skill-agent-introspection-debugging",
-   "skill-kindspectre-browser-verify",
-   "skill-media-pipeline"
   ],
   "diagnosis": [
    "skill-agent-introspection-debugging"
@@ -2341,12 +2899,6 @@
    "skill-mmx-cli",
    "skill-nano-pdf",
    "skill-ocr-and-documents"
-  ],
-  "image": [
-   "skill-agnes-ai-integration",
-   "skill-image-gen-cloud-routing",
-   "skill-imagerouter-integration",
-   "skill-media"
   ],
   "openai-compatible": [
    "skill-agnes-ai-integration",
@@ -2616,20 +3168,6 @@
    "skill-banner-design",
    "skill-hyperframes"
   ],
-  "media": [
-   "skill-banner-design",
-   "skill-buzz-media-attachments",
-   "skill-media",
-   "skill-media-pipeline-monitor",
-   "skill-gif-search",
-   "skill-heartmula",
-   "skill-media-pipeline",
-   "skill-minimax-video-pipeline",
-   "skill-songsee",
-   "skill-youtube-content",
-   "skill-youtube-transcript-fallback",
-   "tool-ffmpeg"
-  ],
   "ads": [
    "skill-banner-design"
   ],
@@ -2752,20 +3290,8 @@
   "once": [
    "skill-batch-fix"
   ],
-  "identity": [
-   "skill-brand",
-   "skill-design"
-  ],
   "frameworks": [
    "skill-brand"
-  ],
-  "management": [
-   "skill-brand",
-   "skill-hermes-webui-ops",
-   "skill-kanban-system-admin",
-   "skill-memory-management",
-   "skill-e2e-testing",
-   "skill-mesh-proxy-gateway"
   ],
   "consistency": [
    "skill-brand"
@@ -2840,13 +3366,6 @@
   ],
   "case-prep-output-discipline": [
    "skill-case-prep-output-discipline"
-  ],
-  "working": [
-   "skill-case-prep-output-discipline",
-   "skill-gluetun-vpn-kill-switch",
-   "skill-user-manual-maintenance",
-   "skill-hermes-oauth-account-isolation",
-   "skill-hermes-windows-runtime"
   ],
   "case-prep": [
    "skill-case-prep-output-discipline"
@@ -3471,16 +3990,6 @@
   "ai-video-mcp-operations": [
    "skill-ai-video-mcp-operations"
   ],
-  "generation": [
-   "skill-ai-video-mcp-operations",
-   "skill-design",
-   "skill-design-system",
-   "skill-image-gen-cloud-routing",
-   "skill-imagerouter-integration",
-   "skill-media",
-   "skill-heartmula",
-   "skill-minimax-video-mcp"
-  ],
   "mcps": [
    "skill-ai-video-mcp-operations",
    "skill-ct207-master-hub-capability"
@@ -3510,14 +4019,6 @@
    "skill-ai-video-mcp-operations",
    "skill-media-pipeline",
    "tool-opus-clip"
-  ],
-  "app": [
-   "skill-ai-video-mcp-operations",
-   "skill-hermes-windows-desktop-ops",
-   "skill-system-consolidation",
-   "skill-hermes-desktop-plugins",
-   "skill-playwright-screen-recording",
-   "tool-glassy"
   ],
   "screens": [
    "skill-ai-video-mcp-operations"
@@ -3755,13 +4256,6 @@
   "raw": [
    "skill-glassy-i2v-raw-to-workspace",
    "skill-stewarding-contentious-content"
-  ],
-  "workspace": [
-   "skill-glassy-i2v-raw-to-workspace",
-   "skill-gws-mcp",
-   "skill-hermes-agent-template",
-   "skill-vault-workspace-scaffolding",
-   "skill-swarm-session-503-diagnostic"
   ],
   "walkthrough": [
    "skill-glassy-i2v-raw-to-workspace",
@@ -4545,24 +5039,6 @@
   "stable": [
    "skill-agent-substrate-deployment"
   ],
-  "proxmox": [
-   "skill-agent-substrate-deployment",
-   "skill-ct207-deploy-bundle-to-chrome",
-   "skill-deploy-public-host-verification",
-   "skill-four-machine-inventory",
-   "skill-gluetun-vpn-kill-switch",
-   "skill-infra-repair",
-   "skill-lxc-ssh-fallback",
-   "skill-proxmox-lxc-drift-audit",
-   "skill-proxmox-outage-recovery",
-   "skill-pulse-monitoring",
-   "skill-remote-script-patch-deploy",
-   "skill-self-host-mail-server",
-   "skill-hermes-remote-process-resilience",
-   "skill-maddy-native-install-lxc",
-   "skill-proxmox-backup-server-setup",
-   "tool-proxmox"
-  ],
   "antigravity-cli": [
    "skill-antigravity-cli"
   ],
@@ -4600,18 +5076,6 @@
   "autoclaw": [
    "skill-autoclaw-troubleshooting"
   ],
-  "desktop": [
-   "skill-autoclaw-troubleshooting",
-   "skill-cua-windows-ops",
-   "skill-desktop-laptop-bridge",
-   "skill-four-machine-inventory",
-   "skill-hermes-windows-desktop-ops",
-   "skill-multi-substrate-hermes-routing",
-   "skill-google-api-from-refresh-token",
-   "skill-google-oauth-desktop-flow",
-   "skill-hermes-desktop-plugins",
-   "skill-inspecting-hermes-desktop-dom"
-  ],
   "issues": [
    "skill-autoclaw-troubleshooting",
    "skill-ct207-mission-control-debug",
@@ -4619,12 +5083,6 @@
    "skill-github-issues",
    "skill-github",
    "skill-pro-se-assistant"
-  ],
-  "provider": [
-   "skill-autoclaw-troubleshooting",
-   "skill-llm-provider-routing-on-proxiverse",
-   "skill-minimax-provider",
-   "skill-hermes-profile-architecture"
   ],
   "recognition": [
    "skill-autoclaw-troubleshooting"
@@ -4666,24 +5124,11 @@
   "buzz-community-join": [
    "skill-buzz-community-join"
   ],
-  "client": [
-   "skill-buzz-community-join"
-  ],
   "can't": [
    "skill-buzz-community-join"
   ],
   "join": [
    "skill-buzz-community-join"
-  ],
-  "self-hosted": [
-   "skill-buzz-community-join",
-   "skill-buzz-self-hosting",
-   "skill-email-stack-decision-tree",
-   "skill-honcho-self-hosted",
-   "skill-self-host-mail-server",
-   "skill-youtube-channel-management-on-mesh",
-   "skill-secrets-on-mesh",
-   "tool-gitea"
   ],
   "buzz-identity-pairing": [
    "skill-buzz-identity-pairing"
@@ -4713,16 +5158,6 @@
    "skill-hermes-env-var-naming-trap",
    "skill-node-inspect-debugger",
    "skill-python-debugpy"
-  ],
-  "docker": [
-   "skill-buzz-self-hosting",
-   "skill-docker-compose-substrate-deployment",
-   "skill-pulse-monitoring",
-   "skill-zimaos-service-ops",
-   "skill-lxc-webserver-pitfalls",
-   "skill-maddy-native-install-lxc",
-   "skill-hermes-terminal-backends",
-   "skill-substrate-migration-cleanup"
   ],
   "compose": [
    "skill-buzz-self-hosting"
@@ -4762,24 +5197,6 @@
   "fly": [
    "skill-cloud-vendor-capability-audit"
   ],
-  "github": [
-   "skill-cloud-vendor-capability-audit",
-   "skill-codebase-inspection",
-   "skill-github-agent-ops",
-   "skill-github-auth",
-   "skill-github-code-review",
-   "skill-github-dual-host-routing",
-   "skill-github-issues",
-   "skill-github-pr-workflow",
-   "skill-github-rate-limits",
-   "skill-github-repo-management",
-   "skill-github",
-   "skill-research-ingest",
-   "skill-skill-scout",
-   "skill-third-party-project-intake",
-   "tool-gitea",
-   "tool-github"
-  ],
   "cold-start-service-catalog": [
    "skill-cold-start-service-catalog"
   ],
@@ -4791,9 +5208,6 @@
    "skill-eval-harness"
   ],
   "process": [
-   "skill-context-evaluation"
-  ],
-  "receiving": [
    "skill-context-evaluation"
   ],
   "cross-referencing": [
@@ -4849,13 +5263,6 @@
   "place": [
    "skill-context-source-audit"
   ],
-  "state": [
-   "skill-context-source-audit",
-   "skill-locked-state-workflow",
-   "skill-multi-agent-sqlite-contention",
-   "skill-wiki-audit",
-   "skill-substrate-migration-cleanup"
-  ],
   "plans": [
    "skill-context-source-audit",
    "skill-plan-canvas",
@@ -4884,16 +5291,6 @@
   "reviewing": [
    "skill-core-documentation-audit"
   ],
-  "core": [
-   "skill-core-documentation-audit",
-   "tool-hermes"
-  ],
-  "docs": [
-   "skill-core-documentation-audit",
-   "skill-google-api-from-refresh-token",
-   "skill-google-workspace",
-   "skill-research-vendor-docs-mintlify-extraction"
-  ],
   "auditing": [
    "skill-core-documentation-audit"
   ],
@@ -4918,9 +5315,6 @@
   "scripts": [
    "skill-cron-job-management",
    "skill-remote-script-patch-deploy"
-  ],
-  "scheduling": [
-   "skill-cron-job-management"
   ],
   "troubleshooting": [
    "skill-cron-job-management",
@@ -5004,16 +5398,6 @@
   ],
   "ct207-dashboard-api-ops": [
    "skill-ct207-dashboard-api-ops"
-  ],
-  "proxy": [
-   "skill-ct207-dashboard-api-ops",
-   "skill-ct207-iframe-proxy-recipe",
-   "skill-docker-compose-substrate-deployment",
-   "skill-godview-gateway-ops",
-   "skill-proxiverse-litellm-ops",
-   "skill-youtube-transcript-fallback",
-   "skill-mesh-proxy-gateway",
-   "tool-litellm"
   ],
   "ct207-dashboard-card-deployment": [
    "skill-ct207-dashboard-card-deployment"
@@ -5178,26 +5562,11 @@
   "swarmvault": [
    "skill-ct207-memory-hungry-tool-deployment"
   ],
-  "indexers": [
-   "skill-ct207-memory-hungry-tool-deployment"
-  ],
   "compilers": [
-   "skill-ct207-memory-hungry-tool-deployment"
-  ],
-  "vector": [
    "skill-ct207-memory-hungry-tool-deployment"
   ],
   "dbs": [
    "skill-ct207-memory-hungry-tool-deployment"
-  ],
-  "without": [
-   "skill-ct207-memory-hungry-tool-deployment",
-   "skill-github-agent-ops",
-   "skill-media-pipeline",
-   "skill-plan-canvas",
-   "skill-pro-se-assistant",
-   "skill-substrate-migration-cleanup",
-   "skill-verify-claim-before-fixing"
   ],
   "oom": [
    "skill-ct207-memory-hungry-tool-deployment"
@@ -5319,9 +5688,6 @@
   "anywhere": [
    "skill-deploy-public-host-verification"
   ],
-  "hostname": [
-   "skill-deploy-public-host-verification"
-  ],
   "desktop-laptop-bridge": [
    "skill-desktop-laptop-bridge"
   ],
@@ -5405,9 +5771,6 @@
    "skill-hermes-windows-desktop-ops",
    "skill-third-party-windows-app-diagnosis",
    "skill-installed-skills-substrate-integration"
-  ],
-  "thin": [
-   "skill-dual-environment-mcp-coordination"
   ],
   "email-stack-decision-tree": [
    "skill-email-stack-decision-tree"
@@ -5517,11 +5880,6 @@
   "gitea-mesh-ops": [
    "skill-gitea-mesh-ops"
   ],
-  "gitea": [
-   "skill-gitea-mesh-ops",
-   "skill-github-dual-host-routing",
-   "tool-gitea"
-  ],
   "gluetun-vpn-kill-switch": [
    "skill-gluetun-vpn-kill-switch"
   ],
@@ -5587,13 +5945,6 @@
   "dispatcher": [
    "skill-hermes-gateway-dispatcher-troubleshoot"
   ],
-  "wsl": [
-   "skill-hermes-gateway-dispatcher-troubleshoot",
-   "skill-hermes-substrate-router",
-   "skill-multi-substrate-hermes-routing",
-   "skill-wsl-mcp-stack-wiring",
-   "skill-hermes-wsl-troubleshooting"
-  ],
   "linux": [
    "skill-hermes-gateway-dispatcher-troubleshoot",
    "skill-hermes-browser-tool-reality-check"
@@ -5636,16 +5987,6 @@
   "hermes-mcp-server-configuration": [
    "skill-hermes-mcp-server-configuration"
   ],
-  "protocol": [
-   "skill-hermes-mcp-server-configuration",
-   "skill-multi-agent-orchestration-protocol",
-   "skill-deepseek-research",
-   "skill-deepseek-planning",
-   "skill-mcp-ecosystem-research",
-   "skill-node-inspect-debugger",
-   "tool-mcp",
-   "tool-cdp"
-  ],
   "safely": [
    "skill-hermes-mcp-server-configuration",
    "skill-node-monolith-modularization"
@@ -5659,14 +6000,6 @@
   "dual-install": [
    "skill-hermes-substrate-router",
    "skill-hermes-wsl-troubleshooting"
-  ],
-  "host": [
-   "skill-hermes-substrate-router",
-   "skill-locked-state-workflow",
-   "skill-lxc-ssh-fallback",
-   "skill-github-dual-host-routing",
-   "skill-kindspectre-browser-verify",
-   "skill-proxmox-backup-server-setup"
   ],
   "hermes-webui-ops": [
    "skill-hermes-webui-ops"
@@ -5809,12 +6142,6 @@
   "image-gen-cloud-routing": [
    "skill-image-gen-cloud-routing"
   ],
-  "litellm": [
-   "skill-image-gen-cloud-routing",
-   "skill-infra-repair",
-   "skill-proxiverse-litellm-ops",
-   "tool-litellm"
-  ],
   "openrouter": [
    "skill-image-gen-cloud-routing",
    "skill-multi-provider-llm-routing"
@@ -5866,10 +6193,6 @@
    "skill-wsl-mcp-stack-wiring",
    "skill-swarm-session-503-diagnostic"
   ],
-  "containers": [
-   "skill-infra-repair",
-   "skill-zimaos-service-ops"
-  ],
   "ollama": [
    "skill-infra-repair",
    "skill-multi-provider-llm-routing",
@@ -5906,9 +6229,6 @@
   "purge": [
    "skill-kanban-admin-toolbar"
   ],
-  "old": [
-   "skill-kanban-admin-toolbar"
-  ],
   "bulk": [
    "skill-kanban-admin-toolbar"
   ],
@@ -5939,16 +6259,6 @@
    "skill-profile-lifecycle-policy",
    "skill-km-agent-drift-audit",
    "skill-hermes-profile-architecture"
-  ],
-  "routing": [
-   "skill-kanban-orchestrator",
-   "skill-llm-provider-routing-on-proxiverse",
-   "skill-multi-substrate-hermes-routing",
-   "skill-self-host-mail-server",
-   "skill-hermes-profile-architecture",
-   "skill-swarm-orchestration-workflow",
-   "tool-litellm",
-   "tool-claude"
   ],
   "kanban-system-admin": [
    "skill-kanban-system-admin"
@@ -6500,15 +6810,6 @@
   "stand": [
    "skill-self-host-mail-server"
   ],
-  "mail": [
-   "skill-self-host-mail-server",
-   "skill-maddy-native-install-lxc"
-  ],
-  "maddy": [
-   "skill-self-host-mail-server",
-   "skill-maddy-native-install-lxc",
-   "skill-tailscale-mesh-relay-patterns"
-  ],
   "stalwart": [
    "skill-self-host-mail-server"
   ],
@@ -6571,9 +6872,6 @@
   "vpn-isolated": [
    "skill-stacks-mesh-complementary-services"
   ],
-  "container": [
-   "skill-stacks-mesh-complementary-services"
-  ],
   "stacks-mesh": [
    "skill-stacks-mesh-complementary-services"
   ],
@@ -6610,12 +6908,6 @@
   "third-party": [
    "skill-third-party-windows-app-diagnosis",
    "skill-stewarding-contentious-content"
-  ],
-  "apps": [
-   "skill-third-party-windows-app-diagnosis",
-   "skill-production-audit",
-   "skill-tui-widgets",
-   "skill-dogfood"
   ],
   "under": [
    "skill-third-party-windows-app-diagnosis"
@@ -7355,9 +7647,6 @@
   "two": [
    "skill-inter-agent-communication-via-human-relay"
   ],
-  "more": [
-   "skill-inter-agent-communication-via-human-relay"
-  ],
   "need": [
    "skill-inter-agent-communication-via-human-relay"
   ],
@@ -7413,9 +7702,6 @@
    "skill-legal-output-guard"
   ],
   "skill's": [
-   "skill-legal-output-guard"
-  ],
-  "safety": [
    "skill-legal-output-guard"
   ],
   "stamp": [
@@ -7514,9 +7800,6 @@
   "mismatch": [
    "skill-lxc-webserver-pitfalls"
   ],
-  "nginx": [
-   "skill-lxc-webserver-pitfalls"
-  ],
   "php-fpm": [
    "skill-lxc-webserver-pitfalls"
   ],
@@ -7607,10 +7890,6 @@
   ],
   "gif-search": [
    "skill-gif-search"
-  ],
-  "download": [
-   "skill-gif-search",
-   "skill-huggingface-hub"
   ],
   "gifs": [
    "skill-gif-search"
@@ -7723,9 +8002,6 @@
    "skill-youtube-vidnav-transcript"
   ],
   "web-extract": [
-   "skill-youtube-transcript-fallback"
-  ],
-  "companion": [
    "skill-youtube-transcript-fallback"
   ],
   "mesh-system-audit": [
@@ -7896,9 +8172,6 @@
    "skill-pi-coding-agent-setup"
   ],
   "dev": [
-   "skill-pi-coding-agent-setup"
-  ],
-  "roles": [
    "skill-pi-coding-agent-setup"
   ],
   "plan-canvas": [
@@ -8520,9 +8793,6 @@
   "max": [
    "skill-deepseek-research"
   ],
-  "researcher": [
-   "skill-deepseek-research"
-  ],
   "researcher-subagent-swarm": [
    "skill-researcher-subagent-swarm"
   ],
@@ -8723,11 +8993,6 @@
   "browser-use-automation": [
    "skill-browser-use-automation"
   ],
-  "automation": [
-   "skill-browser-use-automation",
-   "tool-n8n",
-   "tool-playwright"
-  ],
   "initialization": [
    "skill-browser-use-automation"
   ],
@@ -8748,9 +9013,6 @@
    "skill-deepseek-planning"
   ],
   "design-system-enforcement": [
-   "skill-design-system-enforcement"
-  ],
-  "strict": [
    "skill-design-system-enforcement"
   ],
   "tokenized": [
@@ -9023,9 +9285,6 @@
   "pozi-o": [
    "skill-pozi-kanban-upgrade",
    "skill-pozi-orchestrator"
-  ],
-  "tier": [
-   "skill-pozi-kanban-upgrade"
   ],
   "dark": [
    "skill-pozi-kanban-upgrade"
@@ -9697,16 +9956,7 @@
   "gpu": [
    "tool-vllm"
   ],
-  "traffic": [
-   "tool-litellm"
-  ],
-  "controller": [
-   "tool-litellm"
-  ],
   "sits": [
-   "tool-litellm"
-  ],
-  "front": [
    "tool-litellm"
   ],
   "finished": [
@@ -9849,10 +10099,6 @@
   "always": [
    "tool-hermes"
   ],
-  "brain": [
-   "tool-hermes",
-   "tool-minimax-m3"
-  ],
   "local-first": [
    "tool-glassy"
   ],
@@ -9915,9 +10161,6 @@
   "ones": [
    "tool-proxmox"
   ],
-  "long-term": [
-   "tool-honcho"
-  ],
   "plug-in": [
    "tool-mcp"
   ],
@@ -9960,10 +10203,6 @@
   ],
   "pool": [
    "tool-claude"
-  ],
-  "mesh's": [
-   "tool-minimax-m3",
-   "tool-deepseek"
   ],
   "team": [
    "tool-langgraph"

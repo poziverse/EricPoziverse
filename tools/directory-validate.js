@@ -43,7 +43,7 @@ for (const r of records) {
     if (ref.startsWith("article:")) { const s = ref.slice(8); if (!slugs.has(s)) errors.push(`${r.id}: appearsIn unknown article slug "${s}"`); }
     else if (ref.startsWith("lesson:")) { const s = ref.slice(7); if (!lessonIds.has(s)) errors.push(`${r.id}: appearsIn unknown lesson "${s}"`); }
     else if (ref.startsWith("page:")) { /* page:club.html handled at build */ }
-    else if (ref.endsWith(".html")) { if (!pageFiles.has(ref)) warns.push(`${r.id}: appearsIn unknown page "${ref}"`); }
+    else if (ref.endsWith(".html") || /\.html\?/.test(ref)) { const file = ref.split("?")[0]; if (!pageFiles.has(file)) warns.push(`${r.id}: appearsIn unknown page "${file}"`); }
     else if (ref === "library.html" || ref === "now.html" || ref === "club.html" || ref === "annex.html") { /* known page */ }
     else warns.push(`${r.id}: appearsIn unresolvable "${ref}"`);
   }

@@ -577,7 +577,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "article.html?id=year-of-the-mesh"
    ],
    "related": [],
    "aliases": [],
@@ -1737,7 +1737,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "annex.html?lesson=lx-005"
    ],
    "related": [],
    "aliases": [],
@@ -5725,7 +5725,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "article.html?id=year-of-the-mesh"
    ],
    "related": [],
    "aliases": [],
@@ -6821,7 +6821,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "article.html?id=hermes-always-on"
    ],
    "related": [],
    "aliases": [],
@@ -8481,7 +8481,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "article.html?id=hermes-always-on"
    ],
    "related": [],
    "aliases": [],
@@ -9413,7 +9413,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "annex.html?lesson=lx-001"
    ],
    "related": [],
    "aliases": [],
@@ -9473,7 +9473,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "annex.html?lesson=lx-001"
    ],
    "related": [],
    "aliases": [],
@@ -10549,7 +10549,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "annex.html?lesson=lx-001"
    ],
    "related": [],
    "aliases": [],
@@ -10637,7 +10637,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "annex.html?lesson=lx-005"
    ],
    "related": [],
    "aliases": [],
@@ -10669,7 +10669,7 @@
    "status": "live",
    "appearsIn": [
     "library.html",
-    "undefined"
+    "replies.html"
    ],
    "related": [],
    "aliases": [],
