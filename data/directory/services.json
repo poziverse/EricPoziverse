@@ -1,0 +1,819 @@
+{
+ "kind": "service",
+ "records": [
+  {
+   "id": "service-dashboard-server",
+   "kind": "service",
+   "name": "Dashboard Server",
+   "plain": "The main \"agent OS\" web server — serves Mission Control, TODAY, agent-chat, and the content viewer, plus dashboard APIs (fleet status,…",
+   "description": "The main \"agent OS\" web server — serves Mission Control, TODAY, agent-chat, and the content viewer, plus dashboard APIs (fleet status, kanban stats proxy, remote service restart, system metrics, markdown→HTML/A2UI render).",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 3000",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "3000"
+   }
+  },
+  {
+   "id": "service-kanban-api",
+   "kind": "service",
+   "name": "Kanban Api",
+   "plain": "The shared task-board API (create/update/stats over `kanban.db`) that agents use to hand work to each other.",
+   "description": "The shared task-board API (create/update/stats over `kanban.db`) that agents use to hand work to each other.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 3002",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "3002"
+   }
+  },
+  {
+   "id": "service-marketplace-watcher",
+   "kind": "service",
+   "name": "Marketplace Watcher",
+   "plain": "Watches marketplaces for deals/offers and serves a health + search API for the digests pipeline.",
+   "description": "Watches marketplaces for deals/offers and serves a health + search API for the digests pipeline.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 3100",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "3100"
+   }
+  },
+  {
+   "id": "service-a2a-ct207",
+   "kind": "service",
+   "name": "A2a Ct207",
+   "plain": "Agent-to-agent directory — serves AgentCards so other agents can discover what this hub offers.",
+   "description": "Agent-to-agent directory — serves AgentCards so other agents can discover what this hub offers.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 8001",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "8001"
+   }
+  },
+  {
+   "id": "service-today-bridge",
+   "kind": "service",
+   "name": "Today Bridge",
+   "plain": "Personal briefing data hub — pulls Gmail unread, calendar, and weather (Google device-flow OAuth) for the TODAY page.",
+   "description": "Personal briefing data hub — pulls Gmail unread, calendar, and weather (Google device-flow OAuth) for the TODAY page.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 3180",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "3180"
+   }
+  },
+  {
+   "id": "service-nats",
+   "kind": "service",
+   "name": "Nats",
+   "plain": "Lightweight message bus that carries agent events between services.",
+   "description": "Lightweight message bus that carries agent events between services.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 4222 (localhost only)",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "4222 (localhost only)"
+   }
+  },
+  {
+   "id": "service-nats-activity-bridge",
+   "kind": "service",
+   "name": "Nats Activity Bridge",
+   "plain": "Listens on NATS and writes agent activity events into the dashboard's live activity feed.",
+   "description": "Listens on NATS and writes agent activity events into the dashboard's live activity feed.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (no port)"
+   }
+  },
+  {
+   "id": "service-langgraph-supervisor",
+   "kind": "service",
+   "name": "Langgraph Supervisor",
+   "plain": "The LangGraph \"coordinator\" agent that hands out work in the coding pipeline.",
+   "description": "The LangGraph \"coordinator\" agent that hands out work in the coding pipeline.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 8104",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "8104"
+   }
+  },
+  {
+   "id": "service-langgraph-coder",
+   "kind": "service",
+   "name": "Langgraph Coder",
+   "plain": "The LangGraph \"builder\" agent that writes code on command.",
+   "description": "The LangGraph \"builder\" agent that writes code on command.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 8102",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "8102"
+   }
+  },
+  {
+   "id": "service-langgraph-reviewer",
+   "kind": "service",
+   "name": "Langgraph Reviewer",
+   "plain": "The LangGraph \"reviewer\" agent that checks the coder's work.",
+   "description": "The LangGraph \"reviewer\" agent that checks the coder's work.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 8103",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "8103"
+   }
+  },
+  {
+   "id": "service-hermes-gateway",
+   "kind": "service",
+   "name": "Hermes Gateway",
+   "plain": "Bridges the Hermes agent to messaging platforms (chat integrations).",
+   "description": "Bridges the Hermes agent to messaging platforms (chat integrations).",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (no port)"
+   }
+  },
+  {
+   "id": "service-honcho-mesh",
+   "kind": "service",
+   "name": "Honcho Mesh",
+   "plain": "Memory bridge — connects this hub to the Honcho long-term-memory service on CT 107.",
+   "description": "Memory bridge — connects this hub to the Honcho long-term-memory service on CT 107.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (proxy to CT107)"
+   }
+  },
+  {
+   "id": "service-vault-search-mcp",
+   "kind": "service",
+   "name": "Vault Search Mcp",
+   "plain": "Semantic search over the whole Obsidian vault, exposed as an MCP tool for agents.",
+   "description": "Semantic search over the whole Obsidian vault, exposed as an MCP tool for agents.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (MCP)"
+   }
+  },
+  {
+   "id": "service-vault-search-server",
+   "kind": "service",
+   "name": "Vault Search Server",
+   "plain": "The persistent engine doing the actual embedding + reranking behind vault search.",
+   "description": "The persistent engine doing the actual embedding + reranking behind vault search.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (unconfirmed; embedder/reranker)"
+   }
+  },
+  {
+   "id": "service-godview-gateway",
+   "kind": "service",
+   "name": "Godview Gateway",
+   "plain": "One-stop MCP gateway bundling graphify, obra-kg (knowledge graph), and semble tools.",
+   "description": "One-stop MCP gateway bundling graphify, obra-kg (knowledge graph), and semble tools.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 8050",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "8050"
+   }
+  },
+  {
+   "id": "service-graphify-mcp-mc",
+   "kind": "service",
+   "name": "Graphify Mcp Mc",
+   "plain": "Graphify HTTP MCP server serving the mc-runtime corpus (knowledge-graph tooling).",
+   "description": "Graphify HTTP MCP server serving the mc-runtime corpus (knowledge-graph tooling).",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (MCP)"
+   }
+  },
+  {
+   "id": "service-pulse-agent",
+   "kind": "service",
+   "name": "Pulse Agent",
+   "plain": "The ct207-side Pulse agent that reports this host's health to the Pulse monitoring server.",
+   "description": "The ct207-side Pulse agent that reports this host's health to the Pulse monitoring server.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (client)"
+   }
+  },
+  {
+   "id": "service-herdr",
+   "kind": "service",
+   "name": "Herdr",
+   "plain": "Agent multiplexer — lets you watch/drive agent terminals through the browser (ttyd).",
+   "description": "Agent multiplexer — lets you watch/drive agent terminals through the browser (ttyd).",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 7681 (ttyd)",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "7681 (ttyd)"
+   }
+  },
+  {
+   "id": "service-voice-agent",
+   "kind": "service",
+   "name": "Voice Agent",
+   "plain": "Voice loop pilot: speech-to-text → LLM → text-to-speech → event bus.",
+   "description": "Voice loop pilot: speech-to-text → LLM → text-to-speech → event bus.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "—"
+   }
+  },
+  {
+   "id": "service-voice-visualizer",
+   "kind": "service",
+   "name": "Voice Visualizer",
+   "plain": "The animated \"agent face\" that reacts while the voice agent talks.",
+   "description": "The animated \"agent face\" that reacts while the voice agent talks.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "—"
+   }
+  },
+  {
+   "id": "service-marvin-visualizer",
+   "kind": "service",
+   "name": "Marvin Visualizer",
+   "plain": "A visualizer server (visual output experiments).",
+   "description": "A visualizer server (visual output experiments).",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "—"
+   }
+  },
+  {
+   "id": "service-dsh",
+   "kind": "service",
+   "name": "Dsh",
+   "plain": "DeepSeek Harness web UI — a browser front-end for DeepSeek-powered sessions.",
+   "description": "DeepSeek Harness web UI — a browser front-end for DeepSeek-powered sessions.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "—"
+   }
+  },
+  {
+   "id": "service-arcade-cloud",
+   "kind": "service",
+   "name": "Arcade Cloud",
+   "plain": "Arcade Cloud MCP server (tool integrations over HTTP/SSE).",
+   "description": "Arcade Cloud MCP server (tool integrations over HTTP/SSE).",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "— (HTTP/SSE)"
+   }
+  },
+  {
+   "id": "service-openagents-daemon",
+   "kind": "service",
+   "name": "Openagents Daemon",
+   "plain": "Launcher daemon that starts/stops OpenAgents components on demand.",
+   "description": "Launcher daemon that starts/stops OpenAgents components on demand.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "—"
+   }
+  },
+  {
+   "id": "service-tailscaled",
+   "kind": "service",
+   "name": "Tailscaled",
+   "plain": "Tailscale — the private mesh network that gives ct207 its [private address] address.",
+   "description": "Tailscale — the private mesh network that gives ct207 its [private address] address.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "—"
+   }
+  },
+  {
+   "id": "service-zerotier-one",
+   "kind": "service",
+   "name": "Zerotier One",
+   "plain": "ZeroTier — a second, backup network overlay in case Tailscale path fails.",
+   "description": "ZeroTier — a second, backup network overlay in case Tailscale path fails.",
+   "tags": [
+    "mesh",
+    "networked"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [
+    {
+     "label": "Port 9993",
+     "url": ""
+    }
+   ],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "9993"
+   }
+  },
+  {
+   "id": "service-cron",
+   "kind": "service",
+   "name": "Cron",
+   "plain": "The scheduler — runs the 6-hourly digests pipeline and other recurring jobs.",
+   "description": "The scheduler — runs the 6-hourly digests pipeline and other recurring jobs.",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "—"
+   }
+  },
+  {
+   "id": "service-Service",
+   "kind": "service",
+   "name": "Service",
+   "plain": "What it does",
+   "description": "What it does",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "Port"
+   }
+  },
+  {
+   "id": "service-Category",
+   "kind": "service",
+   "name": "Category",
+   "plain": "Representative skills",
+   "description": "Representative skills",
+   "tags": [
+    "mesh",
+    "background"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "live systemctl inventory 2026-08-29",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {
+    "port": "SKILL.md"
+   }
+  }
+ ]
+}

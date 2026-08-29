@@ -1,0 +1,280 @@
+{
+ "glossary": [
+  {
+   "term": "LXC",
+   "gloss": "A lightweight container on a Proxmox server — a small, isolated box that runs one service, sharing the host's brain."
+  },
+  {
+   "term": "Proxmox",
+   "gloss": "Free software that turns one physical computer into many virtual ones, so each service gets its own isolated space."
+  },
+  {
+   "term": "tailnet",
+   "gloss": "A private network that connects your own devices over the internet, encrypted, as if they were on one home Wi-Fi."
+  },
+  {
+   "term": "Tailscale",
+   "gloss": "The service that creates and manages a tailnet (that private device-to-device network)."
+  },
+  {
+   "term": "WireGuard",
+   "gloss": "A fast, modern VPN technology — a backup way for devices to reach each other if the main network path fails."
+  },
+  {
+   "term": "VPN",
+   "gloss": "A private, encrypted tunnel between devices or networks."
+  },
+  {
+   "term": "vLLM",
+   "gloss": "Software that serves AI models efficiently so many requests can be answered at once."
+  },
+  {
+   "term": "LiteLLM",
+   "gloss": "A traffic controller for AI models — one address in front of many model providers, with automatic failover."
+  },
+  {
+   "term": "Ollama",
+   "gloss": "A tool for running AI models on your own machines or through a hosted plan."
+  },
+  {
+   "term": "GPU",
+   "gloss": "The graphics chip in a computer — also the part that does most of the math when an AI model thinks."
+  },
+  {
+   "term": "inference",
+   "gloss": "The moment an AI model produces an answer."
+  },
+  {
+   "term": "MoE",
+   "gloss": "Mixture of Experts — a type of AI model that only switches on a small part of itself for each question, which saves computing power."
+  },
+  {
+   "term": "SWE-bench",
+   "gloss": "A standardized test that scores how well an AI model fixes real software bugs."
+  },
+  {
+   "term": "GPQA",
+   "gloss": "A standardized test of graduate-level science questions for AI models."
+  },
+  {
+   "term": "MCP",
+   "gloss": "Model Context Protocol — a standard way for AI agents to connect to external tools and data."
+  },
+  {
+   "term": "cron",
+   "gloss": "A scheduler that runs a job at set times — the Alarm Clock of a server."
+  },
+  {
+   "term": "watchdog",
+   "gloss": "A small recurring check that stays silent when everything is healthy and raises an alert when something fails."
+  },
+  {
+   "term": "daemon",
+   "gloss": "A background program that runs continuously, like a service."
+  },
+  {
+   "term": "systemd",
+   "gloss": "The service manager on Linux servers — it starts programs at boot and keeps them running."
+  },
+  {
+   "term": "SSH",
+   "gloss": "A secure, text-based way to log into another computer over the network."
+  },
+  {
+   "term": "Docker",
+   "gloss": "Software that packs an app with everything it needs into an isolated 'container' so it runs the same everywhere."
+  },
+  {
+   "term": "sandbox",
+   "gloss": "An isolated test environment — if the agent breaks something inside it, nothing outside is touched."
+  },
+  {
+   "term": "OKLCH",
+   "gloss": "A modern way to describe colors numerically so contrast and accessibility can be measured precisely."
+  },
+  {
+   "term": "WCAG",
+   "gloss": "Web Content Accessibility Guidelines — the shared rulebook for making websites usable by everyone, including contrast minimums."
+  },
+  {
+   "term": "JSON-LD",
+   "gloss": "A machine-readable description of a page's content, added so search engines understand it."
+  },
+  {
+   "term": "RSS",
+   "gloss": "A feed format that lets readers subscribe to new posts without visiting the site."
+  },
+  {
+   "term": "Open Graph",
+   "gloss": "Page tags that decide what a link looks like when shared on social media."
+  },
+  {
+   "term": "magic link",
+   "gloss": "A one-time sign-in link emailed to you — no password needed."
+  },
+  {
+   "term": "OAuth",
+   "gloss": "The standard 'Sign in with…' flow that lets one service confirm your identity without seeing your password."
+  },
+  {
+   "term": "CLIP embeddings",
+   "gloss": "Numeric descriptions of images that let software find pictures by meaning, not by filename."
+  },
+  {
+   "term": "deterministic render",
+   "gloss": "A video export where the same input always produces the exact same output — no re-editing by hand."
+  },
+  {
+   "term": "kanban",
+   "gloss": "A task board with columns like to-do / doing / done."
+  },
+  {
+   "term": "dispatcher",
+   "gloss": "The small program that picks tasks off the board and hands them to the right agent."
+  },
+  {
+   "term": "mesh",
+   "gloss": "The author's home network of small servers and agents working as one system."
+  },
+  {
+   "term": "transmission",
+   "gloss": "The site's name for a long-form essay — a numbered entry in the field log."
+  },
+  {
+   "term": "field report",
+   "gloss": "The site's name for a video episode — the on-camera twin of an essay."
+  },
+  {
+   "term": "receipt",
+   "gloss": "Proof that a claim is real: a link to the repo, runbook, screenshot, or result behind it."
+  },
+  {
+   "term": "profile",
+   "gloss": "An isolated agent setup — its own model, tools, memory, and settings."
+  },
+  {
+   "term": "quota",
+   "gloss": "A usage limit or allowance on an AI service."
+  },
+  {
+   "term": "local-first",
+   "gloss": "Software designed so your data and computing stay on your own machines first, the cloud second."
+  },
+  {
+   "term": "self-hosted",
+   "gloss": "Run on your own hardware instead of a rented cloud service."
+  },
+  {
+   "term": "open source",
+   "gloss": "Software whose code is public — anyone can inspect, use, and change it."
+  },
+  {
+   "term": "prompt",
+   "gloss": "The instructions or question you give an AI model."
+  },
+  {
+   "term": "context window",
+   "gloss": "How much text an AI model can consider at once — its working memory."
+  },
+  {
+   "term": "token",
+   "gloss": "The small chunks of text (roughly word pieces) that AI models read and write; usage is billed in tokens."
+  },
+  {
+   "term": "API",
+   "gloss": "A defined way for programs to talk to each other over the network."
+  },
+  {
+   "term": "endpoint",
+   "gloss": "One specific address of an API — one 'door' a program can call."
+  },
+  {
+   "term": "deploy",
+   "gloss": "Put new code or content live on a server."
+  },
+  {
+   "term": "cache",
+   "gloss": "A stored copy of data or files so repeat requests are faster."
+  },
+  {
+   "term": "latency",
+   "gloss": "The waiting time between a request and its answer."
+  },
+  {
+   "term": "throughput",
+   "gloss": "How many requests a system can handle per second."
+  },
+  {
+   "term": "fallback",
+   "gloss": "A backup path that takes over automatically when the primary one fails."
+  },
+  {
+   "term": "escalation",
+   "gloss": "Handing a problem up to a stronger model — or to a human — when the first attempt can't solve it."
+  },
+  {
+   "term": "render",
+   "gloss": "Produce the final video, image, or page from source files."
+  },
+  {
+   "term": "encode",
+   "gloss": "Convert media into a standard file format."
+  },
+  {
+   "term": "cron job",
+   "gloss": "a task that runs on a schedule"
+  },
+  {
+   "term": "vault",
+   "gloss": "a private, versioned library of notes and files"
+  },
+  {
+   "term": "MCP server",
+   "gloss": "a plug-in tool an agent can call"
+  },
+  {
+   "term": "runbook",
+   "gloss": "a step-by-step guide"
+  },
+  {
+   "term": "checkpoint database",
+   "gloss": "a file that saves work in progress"
+  },
+  {
+   "term": "SQLite",
+   "gloss": "a simple file database"
+  },
+  {
+   "term": "WCAG AA",
+   "gloss": "rules for readable contrast"
+  },
+  {
+   "term": "LLM",
+   "gloss": "the AI models behind chatbots"
+  },
+  {
+   "term": "proxy",
+   "gloss": "a go-between: one address in, many models behind it"
+  },
+  {
+   "term": "429 error",
+   "gloss": "the service's 'too many requests' reply"
+  },
+  {
+   "term": "failover",
+   "gloss": "switching to a backup automatically"
+  },
+  {
+   "term": "agent",
+   "gloss": "A computer program that does tasks on its own - reading, writing, and running commands - while following written instructions."
+  },
+  {
+   "term": "sweeper",
+   "gloss": "A helper agent that clears bulk background work in one pass: log cleanups, searches, summaries."
+  },
+  {
+   "term": "clip",
+   "gloss": "A short video cut from a longer one. Spelled CLIP, it also names a tool that finds images by meaning."
+  }
+ ]
+}

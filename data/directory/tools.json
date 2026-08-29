@@ -1,0 +1,1055 @@
+{
+ "kind": "tool",
+ "records": [
+  {
+   "id": "tool-ollama",
+   "kind": "tool",
+   "name": "Ollama",
+   "plain": "A tool for running AI models on your own machines or through a hosted plan.",
+   "description": "Ollama makes it easy to download and serve AI models. On the mesh it appears two ways: as a cloud plan (the fast path for live chat) and as a local server (the always-works backup). The routing rules decide which one answers.",
+   "tags": [
+    "ai",
+    "serving"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:llm-routing-mesh",
+    "article:gpu-offloading"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-vllm",
+   "kind": "tool",
+   "name": "vLLM",
+   "plain": "High-throughput AI serving: 120-160 requests per second with fast first words.",
+   "description": "vLLM is the production serving engine for AI models. It batches many requests at once and manages memory smartly. On the mesh it turns the desktop's graphics chip into a shared answering server for the whole network.",
+   "tags": [
+    "ai",
+    "serving",
+    "performance"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:gpu-offloading"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-litellm",
+   "kind": "tool",
+   "name": "LiteLLM",
+   "plain": "A traffic controller that sits in front of many AI models.",
+   "description": "LiteLLM gives every caller one address and handles the switching behind it: if a provider fails or runs dry, the next one takes over automatically. It runs in its own service box (CT 123).",
+   "tags": [
+    "ai",
+    "routing"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:llm-routing-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-hyperframes",
+   "kind": "tool",
+   "name": "HyperFrames",
+   "plain": "Turns web pages into finished videos.",
+   "description": "HyperFrames renders HTML and CSS animations into MP4 files, which means video becomes code: reviewable, versioned, and re-renderable. It is the render engine behind the Field Reports and the section headers.",
+   "tags": [
+    "video",
+    "creation"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video",
+    "article:mission-control"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-manim",
+   "kind": "tool",
+   "name": "Manim",
+   "plain": "The animation engine behind famous math explainer videos.",
+   "description": "Manim draws precise mathematical and diagram animations. On the mesh it is the engine of choice when a shot is about a formula, a system, or a process that benefits from exact drawing.",
+   "tags": [
+    "video",
+    "creation"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-remotion",
+   "kind": "tool",
+   "name": "Remotion",
+   "plain": "Builds videos with React, the popular web-app tool.",
+   "description": "Remotion lets programmers make videos with the same framework they build web apps with. Scenes are components, so they can be tested like software.",
+   "tags": [
+    "video",
+    "creation"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "beta",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-motion-canvas",
+   "kind": "tool",
+   "name": "Motion Canvas",
+   "plain": "A programmer's sketchpad for technical animation.",
+   "description": "Motion Canvas is for technical storytelling: it animates ideas with code-first precision. It rounds out the four-engine video landscape as the sketch-first option.",
+   "tags": [
+    "video",
+    "creation"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "beta",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-ffmpeg",
+   "kind": "tool",
+   "name": "FFmpeg",
+   "plain": "The free media converter that stitches, converts, and processes audio and video.",
+   "description": "FFmpeg is the plumbing of the media pipeline: it joins rendered scenes with voice tracks, converts formats, and handles every file conversion. It is free, scriptable, and everywhere.",
+   "tags": [
+    "media",
+    "plumbing"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:inside-glassy"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-opus-clip",
+   "kind": "tool",
+   "name": "Opus Clip",
+   "plain": "Cuts long videos into short vertical clips automatically.",
+   "description": "Opus Clip takes a finished video and produces short vertical versions for social media. In the pipeline it is the repurposing step: one render becomes many posts.",
+   "tags": [
+    "video",
+    "distribution"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:inside-glassy"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-webgpu",
+   "kind": "tool",
+   "name": "WebGPU",
+   "plain": "A modern way for web pages to use your graphics chip.",
+   "description": "WebGPU gives the browser a fast path to the GPU. It is what makes speech-to-text run entirely in the browser on your own machine, which is why Glassy's transcription never uploads audio.",
+   "tags": [
+    "browser",
+    "privacy"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:webgpu-whisper"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-whisper",
+   "kind": "tool",
+   "name": "Whisper",
+   "plain": "An open speech-to-text model that runs locally.",
+   "description": "Whisper transcribes voice to text. Running it in the browser on your own graphics chip means the recording never leaves the machine - the privacy promise holds end to end.",
+   "tags": [
+    "ai",
+    "speech",
+    "privacy"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:webgpu-whisper"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-elevenlabs",
+   "kind": "tool",
+   "name": "ElevenLabs",
+   "plain": "A service that generates realistic AI voices.",
+   "description": "ElevenLabs creates the narrated voice tracks for videos. The production brief marks its use honestly: if a synthetic voice is used, the video says so.",
+   "tags": [
+    "voice",
+    "production"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-yutu",
+   "kind": "tool",
+   "name": "yutu",
+   "plain": "A tool that lets AI assistants manage a YouTube channel.",
+   "description": "yutu gives agents the ability to upload, update, and organize videos through the official YouTube API. It is the upload step of the video pipeline.",
+   "tags": [
+    "video",
+    "distribution"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-rive",
+   "kind": "tool",
+   "name": "Rive",
+   "plain": "A tool for interactive, lightweight animations.",
+   "description": "Rive makes small, crisp animations that run anywhere. On the mesh it is one of the motion tools an AI assistant can drive through its MCP connection.",
+   "tags": [
+    "animation",
+    "creation"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "beta",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-lottiefiles",
+   "kind": "tool",
+   "name": "LottieFiles",
+   "plain": "A library of real animation craft and lightweight web animations.",
+   "description": "LottieFiles contributes the motion-design skill layer: real patterns from shipped products, plus the Lottie format for lightweight animations.",
+   "tags": [
+    "animation",
+    "design"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:design-vocabulary"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-impeccable",
+   "kind": "tool",
+   "name": "Impeccable",
+   "plain": "An open-source skill that lists 46 classic AI design mistakes to avoid.",
+   "description": "Impeccable codifies the generic-AI defaults - the overused font, the purple gradient, the card inside a card - as detectors. It keeps AI-designed pages from looking AI-designed.",
+   "tags": [
+    "design",
+    "quality"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:design-vocabulary"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-openclaw",
+   "kind": "tool",
+   "name": "OpenClaw",
+   "plain": "An open platform with 210,000+ stars and 5,700+ shared agent skills.",
+   "description": "OpenClaw is a large open ecosystem for running AI agents. On the mesh it runs alongside Hermes, and its shared skill library is one of the reasons the stack grows so fast.",
+   "tags": [
+    "agents",
+    "open-source"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video",
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-hermes",
+   "kind": "tool",
+   "name": "Hermes",
+   "plain": "The AI agent platform that anchors the mesh - always on, always scheduled.",
+   "description": "Hermes is the always-on agent runtime: its gateway is the scheduler, its memory is disciplined, and its helpers run the boring parts of the day. It is the brain the fleet talks to.",
+   "tags": [
+    "agents",
+    "core"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:hermes-always-on",
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-glassy",
+   "kind": "tool",
+   "name": "Glassy",
+   "plain": "A calm, local-first note-taking app designed for easily-overwhelmed brains.",
+   "description": "Glassy keeps notes in one file you own, runs speech-to-text in your own browser, and follows strict design rules: high contrast, calm motion, two typefaces. Privacy is its architecture.",
+   "tags": [
+    "software",
+    "local-first"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:inside-glassy",
+    "article:webgpu-whisper"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-openmontage",
+   "kind": "tool",
+   "name": "OpenMontage",
+   "plain": "The first open-source video studio run by an AI agent.",
+   "description": "OpenMontage puts the AI agent in charge of decisions and gives it Python tools and memory. Governance is the product: cost tracking, locked runtimes, and pre-render checks keep quality from collapsing.",
+   "tags": [
+    "video",
+    "agents"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:openmontage"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-mission-control",
+   "kind": "tool",
+   "name": "Mission Control",
+   "plain": "The operations floor: one dashboard that shows every service at a glance.",
+   "description": "Mission Control gathers the task board, scheduled jobs, notes, and nine other services into one page with fixed rules. It is where the humans look first when something changes.",
+   "tags": [
+    "dashboard",
+    "operations"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:mission-control",
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-pulse",
+   "kind": "tool",
+   "name": "Pulse",
+   "plain": "The fleet health monitor: watches every machine and powers the health panels.",
+   "description": "Pulse checks hosts and services around the clock and feeds the health tiles on Mission Control. Green means nothing happened - the best news an operations floor can deliver.",
+   "tags": [
+    "monitoring",
+    "health"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-gitea",
+   "kind": "tool",
+   "name": "Gitea",
+   "plain": "A self-hosted code server - your own private GitHub.",
+   "description": "Gitea stores the mesh's code repositories on home hardware. Version control stays local-first, with the same workflows as any big platform.",
+   "tags": [
+    "code",
+    "self-hosted"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-n8n",
+   "kind": "tool",
+   "name": "n8n",
+   "plain": "A visual automation builder - drag-and-drop workflows between services.",
+   "description": "n8n connects services with visual workflows. It is one of the automation options the mesh surveys (and one of the tools marked 'do not use' in the decisive creator-stack review, in favor of script-first automation).",
+   "tags": [
+    "automation"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "resting",
+   "appearsIn": [
+    "article:youtube-creator-stack"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-tailscale",
+   "kind": "tool",
+   "name": "Tailscale",
+   "plain": "A private network that connects your devices over the internet, encrypted.",
+   "description": "Tailscale gives every machine a stable private address and connects them as if they shared one Wi-Fi. It is how the desktop reaches the server from anywhere.",
+   "tags": [
+    "network",
+    "privacy"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-wireguard",
+   "kind": "tool",
+   "name": "WireGuard",
+   "plain": "A fast, modern VPN technology - the backup network path.",
+   "description": "WireGuard is the backup way for devices to reach each other when the main private network path fails. The mesh keeps it configured and tested.",
+   "tags": [
+    "network",
+    "backup"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-proxmox",
+   "kind": "tool",
+   "name": "Proxmox",
+   "plain": "Free software that splits one big computer into many small, isolated ones.",
+   "description": "Proxmox hosts the service boxes: 26 small containers, about 15 running at all times. Each one is isolated, so a broken service does not take its neighbors down.",
+   "tags": [
+    "servers",
+    "infrastructure"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh",
+    "article:llm-routing-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-nats",
+   "kind": "tool",
+   "name": "NATS",
+   "plain": "A lightweight message bus that carries events between services.",
+   "description": "NATS is the mesh's nervous system for events: when something happens in one service, NATS carries the news to the listeners that care - like the activity feed on the dashboard.",
+   "tags": [
+    "events",
+    "plumbing"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-honcho",
+   "kind": "tool",
+   "name": "Honcho",
+   "plain": "A long-term memory service for AI agents.",
+   "description": "Honcho stores cross-session context so agents remember between conversations. It runs on its own container and is one of the three memory layers.",
+   "tags": [
+    "memory",
+    "agents"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:hermes-always-on"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-mcp",
+   "kind": "tool",
+   "name": "MCP",
+   "plain": "Model Context Protocol - a standard plug-in system that lets AI agents connect to tools.",
+   "description": "MCP is how agents discover and use tools: search, voice, automation, and more. The mesh runs 21 of these plug-in connections, and the planned Mesh Directory becomes one too.",
+   "tags": [
+    "agents",
+    "standard"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh",
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-git",
+   "kind": "tool",
+   "name": "Git",
+   "plain": "Version control: every change saved with a date, a message, and a way back.",
+   "description": "Git is why nothing on the mesh is ever truly lost. Rules, decisions, and content are versioned like code - and a disaster-recovery skill exists for the day something goes wrong.",
+   "tags": [
+    "code",
+    "discipline"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:vault-ontology"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-github",
+   "kind": "tool",
+   "name": "GitHub",
+   "plain": "The public home for open-source code - where this site's source now lives.",
+   "description": "GitHub hosts the EricPoziverse repository: the site, its tools, and its documentation, public and open-licensed.",
+   "tags": [
+    "code",
+    "open-source"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-playwright",
+   "kind": "tool",
+   "name": "Playwright",
+   "plain": "A browser automation tool - drives real browsers for tests, screenshots, and video.",
+   "description": "Playwright drives real browsers. On the mesh it records footage, verifies deployments, and captures the evidence screenshots behind the receipts.",
+   "tags": [
+    "browser",
+    "testing"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-react",
+   "kind": "tool",
+   "name": "React",
+   "plain": "The popular web-app framework - used to build testable video components.",
+   "description": "React builds interfaces as components. In the video stack, Remotion uses React to build video scenes that can be tested like software.",
+   "tags": [
+    "code",
+    "creation"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "beta",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-claude",
+   "kind": "tool",
+   "name": "Anthropic Claude",
+   "plain": "One of the AI model families in the routing pool.",
+   "description": "Claude models appear in the mesh's routing plans as strong general models. Model choice always follows verified benchmark data, not marketing.",
+   "tags": [
+    "ai",
+    "models"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "planned",
+   "appearsIn": [
+    "article:llm-routing-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-minimax-m3",
+   "kind": "tool",
+   "name": "MiniMax M3",
+   "plain": "The fast reasoning model that powers the mesh's main agent brain.",
+   "description": "MiniMax M3 is the model behind the primary agent profile: deep reasoning at the operator's side, with its own provider account so scheduled jobs never eat the chat allowance.",
+   "tags": [
+    "ai",
+    "models"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:llm-routing-mesh",
+    "article:model-fleet"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-deepseek",
+   "kind": "tool",
+   "name": "DeepSeek",
+   "plain": "An AI model family used in the mesh's research and harness work.",
+   "description": "DeepSeek models appear in the mesh's model research - the benchmark tables and the harness experiments that decide which model gets which job.",
+   "tags": [
+    "ai",
+    "models"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "planned",
+   "appearsIn": [
+    "article:llm-routing-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-langgraph",
+   "kind": "tool",
+   "name": "LangGraph",
+   "plain": "The framework behind the coding team: a supervisor, a builder, and a reviewer.",
+   "description": "LangGraph runs the coding pipeline as a real supervisor loop - up to five iterations and three replans, then a human review. Every handoff is saved to a shared checklist.",
+   "tags": [
+    "agents",
+    "code"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh",
+    "article:model-fleet"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-cdp",
+   "kind": "tool",
+   "name": "Chrome DevTools Protocol",
+   "plain": "The remote-control protocol for browsers - how agents drive and verify pages.",
+   "description": "CDP lets programs drive a real browser: click, read, screenshot, record. The mesh uses it for deployment verification and for capturing b-roll footage.",
+   "tags": [
+    "browser",
+    "testing"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-vscode",
+   "kind": "tool",
+   "name": "VS Code",
+   "plain": "The code editor - where humans and agents meet over the same files.",
+   "description": "VS Code is the shared editor: the operator writes and reviews, and agents propose changes to the same versioned files.",
+   "tags": [
+    "code"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  }
+ ]
+}

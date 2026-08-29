@@ -1,0 +1,317 @@
+{
+ "kind": "resource",
+ "records": [
+  {
+   "id": "resource-network-topology-doc",
+   "kind": "resource",
+   "name": "The Network Topology Document",
+   "plain": "The one document that started it all: what the system is and where everything lives.",
+   "description": "Written a year ago, it answers a simple question: what is this system, and where does everything live? It maps four computers, their roles, and the services on each. Updated as the mesh grows.",
+   "tags": [
+    "network",
+    "map"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:year-of-the-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/00_Core",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-creator-research-index",
+   "kind": "resource",
+   "name": "Creator Research Index",
+   "plain": "The index of followed creators - profiles, videos, and transcripts - that feeds public reviews.",
+   "description": "Six active creators with per-video notes and transcripts. This research feeds the Reply Threads: every public review starts here, and the fairness check reads these notes first.",
+   "tags": [
+    "research",
+    "creators"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 03_Knowledge/07_External/Followed-Creators",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-mission-control-runbooks",
+   "kind": "resource",
+   "name": "Mission Control Runbooks",
+   "plain": "The fix-it instructions written by real incidents - each failure became a rule.",
+   "description": "Every dashboard incident ended with a runbook line: what broke, what fixed it, and the rule it taught. This collection is why the same problem rarely happens twice.",
+   "tags": [
+    "operations",
+    "runbooks"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:mission-control"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 02_Projects/mission-control-lab",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-content-studio-manifest",
+   "kind": "resource",
+   "name": "Content Studio Capability Manifest",
+   "plain": "A live-checked list of every video tool the studio can use, with test dates.",
+   "description": "Each tool has a status, a use-when, and the date it last passed a real test. The manifest also carries the budget rules: a spending cap per session, free tools first, paid tools only with a written reason.",
+   "tags": [
+    "video",
+    "manifest"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 02_Projects/content-creation",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-vault-ontology-map",
+   "kind": "resource",
+   "name": "The Vault Ontology Map",
+   "plain": "The street plan for 5,500+ notes: five folders, four rules, and a metric that matters.",
+   "description": "The map keeps the knowledge base findable for humans and AI agents alike. Its metric is not the note count - it is time-to-find: can any note be pulled in seconds?",
+   "tags": [
+    "knowledge",
+    "organization"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:vault-ontology"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault root",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-plain-language-rules",
+   "kind": "resource",
+   "name": "The Plain-Language Rules",
+   "plain": "The editorial contract that keeps every page readable for first-time learners.",
+   "description": "Grade 8.5 or below. Short sentences. Everyday words. Numbers and links never change. Technical terms get a plain-language gloss the first time they appear. Every section of the site was rewritten under this contract.",
+   "tags": [
+    "editorial",
+    "standards"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:design-vocabulary"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "website project docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-fr001-production-brief",
+   "kind": "resource",
+   "name": "Field Report 001 Production Brief",
+   "plain": "The shot list, script skeleton, and quality gates for the first video episode.",
+   "description": "Voice-over over real screen captures. Five chapters, each mapped to a live surface of the mesh. Includes the honesty gates: synthetic voice disclosed, no invented metrics, receipts required.",
+   "tags": [
+    "video",
+    "production"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:agent-native-video"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "website project docs/FR-001-PRODUCTION-BRIEF.md",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-swarm-operations-guide",
+   "kind": "resource",
+   "name": "Swarm Operations Guide",
+   "plain": "How eleven named agents divide the work - and what each one is never allowed to touch.",
+   "description": "The roster and the rules: a planner decomposes missions, a knowledge-manager is the only vault writer, a coding pair reviews its own work up to five rounds, then a human reads instead of a silent failure.",
+   "tags": [
+    "agents",
+    "operations"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:hermes-always-on"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 01_System/05_Operations",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-model-fleet-build-log",
+   "kind": "resource",
+   "name": "Model Fleet Build Log",
+   "plain": "The verified build story of the five-profile fleet - including the parts that broke.",
+   "description": "What shipped, what failed, and the three honest mistakes: trust-but-probe, a verifier with its own bug, and a claimed self-test that was only half-run. Every mistake became a vault note.",
+   "tags": [
+    "agents",
+    "fleet"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:model-fleet"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 02_Projects/proxiverse",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-orchestration-tiering-research",
+   "kind": "resource",
+   "name": "Model Orchestration Tiering Research",
+   "plain": "The benchmark study that decided which model gets which job.",
+   "description": "Verified numbers from live model cards: coding above 80 on SWE-bench, the best GPQA Diamond in the pool, one-second delegation. Plus the literature: cost cuts up to 72% by matching difficulty to the model.",
+   "tags": [
+    "ai",
+    "research"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:llm-routing-mesh"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 02_Projects/hermes-optimization",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-design-elevation-guide",
+   "kind": "resource",
+   "name": "Design Elevation Guide",
+   "plain": "How pages go from functional to calm, high-contrast, and calm-motion by rule.",
+   "description": "The craft guide behind the Learning Annex's design path: measurable contrast, motion budgets, two typefaces, and whitespace as a feature.",
+   "tags": [
+    "design",
+    "craft"
+   ],
+   "category": "craft",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:design-vocabulary"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 00_System",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "resource-creator-stack-blueprint",
+   "kind": "resource",
+   "name": "Creator Stack Blueprint",
+   "plain": "The 2026 tool landscape for a solo creator - scored, decided, and priced.",
+   "description": "Sixty-plus tools reviewed, about twenty rejected on purpose, two pipeline shapes chosen, and a $85/month starter set. The plan supplies the tools; the human publishes.",
+   "tags": [
+    "creation",
+    "stack"
+   ],
+   "category": "creation",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:youtube-creator-stack"
+   ],
+   "related": [],
+   "aliases": [],
+   "provenance": {
+    "source": "vault 02_Projects/youtube-channel-management-2026-07-28",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  }
+ ]
+}
