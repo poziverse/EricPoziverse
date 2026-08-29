@@ -53,7 +53,7 @@ const TOOLS = [
 
 const records = TOOLS.filter(t => t[6] !== "skip").map(([id, name, plain, description, tags, category, status, appearsIn]) => ({
   id, kind: "tool", name, plain, description, tags, category,
-  level: "foundation", status, appearsIn, related: [], aliases: [],
+  level: "foundation", status, appearsIn, related: [], aliases: ({ "tool-tailscale": ["tailnet", "mesh network", "vpn", "private network"], "tool-ollama": ["model runner", "local ai"], "tool-litellm": ["router", "traffic controller", "proxy"], "tool-mission-control": ["MC", "dashboard", "operations floor"], "tool-hermes": ["hermes agent", "gateway", "brain"], "tool-mcp": ["model context protocol", "plug-in system"], "tool-pulse": ["health monitor", "fleet health"], "tool-vllm": ["serving engine", "gpu server"] })[id] || [],
   provenance: { source: "site articles + operational docs", verified: today },
   links: [], updated: today, extra: {},
 }));

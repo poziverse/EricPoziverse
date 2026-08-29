@@ -16,7 +16,11 @@
    "status": "live",
    "appearsIn": [],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "mission control",
+    "MC",
+    "dashboard"
+   ],
    "provenance": {
     "source": "live systemctl inventory 2026-08-29",
     "verified": "2026-08-29"
@@ -47,7 +51,11 @@
    "status": "live",
    "appearsIn": [],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "kanban",
+    "task board",
+    "task api"
+   ],
    "provenance": {
     "source": "live systemctl inventory 2026-08-29",
     "verified": "2026-08-29"
@@ -140,7 +148,10 @@
    "status": "live",
    "appearsIn": [],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "briefing",
+    "email calendar weather"
+   ],
    "provenance": {
     "source": "live systemctl inventory 2026-08-29",
     "verified": "2026-08-29"
@@ -171,7 +182,11 @@
    "status": "live",
    "appearsIn": [],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "message bus",
+    "events",
+    "event bus"
+   ],
    "provenance": {
     "source": "live systemctl inventory 2026-08-29",
     "verified": "2026-08-29"
@@ -373,7 +388,11 @@
    "status": "live",
    "appearsIn": [],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "vault search",
+    "semantic search",
+    "MCP"
+   ],
    "provenance": {
     "source": "live systemctl inventory 2026-08-29",
     "verified": "2026-08-29"
@@ -425,7 +444,10 @@
    "status": "live",
    "appearsIn": [],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "MCP gateway",
+    "knowledge graph"
+   ],
    "provenance": {
     "source": "live systemctl inventory 2026-08-29",
     "verified": "2026-08-29"
@@ -695,7 +717,12 @@
    "status": "live",
    "appearsIn": [],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "tailscale",
+    "tailnet",
+    "mesh network",
+    "vpn"
+   ],
    "provenance": {
     "source": "live systemctl inventory 2026-08-29",
     "verified": "2026-08-29"

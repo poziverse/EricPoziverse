@@ -19,7 +19,10 @@
     "article:gpu-offloading"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "model runner",
+    "local ai"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"
@@ -46,7 +49,10 @@
     "article:gpu-offloading"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "serving engine",
+    "gpu server"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"
@@ -72,7 +78,11 @@
     "article:llm-routing-mesh"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "router",
+    "traffic controller",
+    "proxy"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"
@@ -466,7 +476,11 @@
     "article:year-of-the-mesh"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "hermes agent",
+    "gateway",
+    "brain"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"
@@ -546,7 +560,11 @@
     "article:year-of-the-mesh"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "MC",
+    "dashboard",
+    "operations floor"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"
@@ -572,7 +590,10 @@
     "article:year-of-the-mesh"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "health monitor",
+    "fleet health"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"
@@ -649,7 +670,12 @@
     "article:year-of-the-mesh"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "tailnet",
+    "mesh network",
+    "vpn",
+    "private network"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"
@@ -781,7 +807,10 @@
     "article:agent-native-video"
    ],
    "related": [],
-   "aliases": [],
+   "aliases": [
+    "model context protocol",
+    "plug-in system"
+   ],
    "provenance": {
     "source": "site articles + operational docs",
     "verified": "2026-08-29"

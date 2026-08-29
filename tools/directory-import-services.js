@@ -21,6 +21,7 @@ while ((m = re.exec(report)) !== null) {
   const plain = desc.split(/(?<=[.!?])\s+/)[0].replace(/\*\*/g, "");
   const id = "service-" + unit;
   if (records.some(r => r.id === id)) continue;
+  const svcAliases = ({ tailscaled: ["tailscale", "tailnet", "mesh network", "vpn"], "dashboard-server": ["mission control", "MC", "dashboard"], "kanban-api": ["kanban", "task board", "task api"], caddy: ["reverse proxy", "front door", "https"], pulse: ["fleet health", "health monitor", "pulse agent"], jarvis: ["agent substrate", "open-jarvis"], "today-bridge": ["briefing", "email calendar weather"], nats: ["message bus", "events", "event bus"], "vault-search-mcp": ["vault search", "semantic search", "MCP"], "godview-gateway": ["MCP gateway", "knowledge graph"] })[unit] || [];
   records.push({
     id, kind: "service", name,
     plain: plain.length > 140 ? plain.slice(0, 137).replace(/\s\S*$/, "") + "…" : plain,
@@ -31,7 +32,7 @@ while ((m = re.exec(report)) !== null) {
     status: "live",
     appearsIn: [],
     related: [],
-    aliases: [],
+    aliases: svcAliases,
     provenance: { source: "live systemctl inventory 2026-08-29", verified: today },
     links: port && /\d{4}/.test(port) ? [{ label: "Port " + port.replace(/\*\*/g, ""), url: "" }] : [],
     updated: today,

@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-29T21:00:22.208Z",
+ "generatedAt": "2026-08-29T21:50:34.149Z",
  "counts": {
   "records": 482,
-  "indexWords": 2410
+  "indexWords": 2413
  },
  "byKind": {
   "resource": 12,
@@ -735,6 +735,7 @@
    "skill-hermes-profile-architecture",
    "skill-mcp-ecosystem-research",
    "skill-tencent-hunyuan-inference",
+   "tool-ollama",
    "tool-whisper",
    "tool-mcp",
    "tool-claude",
@@ -948,6 +949,7 @@
    "skill-maddy-native-install-lxc",
    "skill-proxmox-backup-server-setup",
    "skill-browser-use-automation",
+   "tool-vllm",
    "tool-gitea"
   ],
   "main": [
@@ -1186,6 +1188,18 @@
    "service-cron",
    "skill-unified-memory"
   ],
+  "task": [
+   "service-kanban-api",
+   "skill-delegate-task-debug",
+   "skill-session-end-checklist",
+   "skill-browser-use-automation",
+   "skill-deepseek-planning",
+   "skill-parallel-research-swarm",
+   "skill-pozi-orchestrator"
+  ],
+  "board": [
+   "service-kanban-api"
+  ],
   "marketplace": [
    "service-marketplace-watcher",
    "skill-marketplace-watcher",
@@ -1341,6 +1355,12 @@
    "skill-google-api-from-refresh-token",
    "skill-google-oauth-desktop-flow"
   ],
+  "email": [
+   "service-today-bridge",
+   "skill-email-stack-decision-tree",
+   "skill-self-host-mail-server",
+   "skill-himalaya"
+  ],
   "nats": [
    "service-nats",
    "service-nats-activity-bridge",
@@ -1389,6 +1409,10 @@
    "skill-wsl-ram-reclaim",
    "tool-n8n",
    "tool-nats"
+  ],
+  "event": [
+   "service-nats",
+   "service-voice-agent"
   ],
   "activity": [
    "service-nats-activity-bridge"
@@ -1560,7 +1584,8 @@
    "skill-gluetun-vpn-kill-switch",
    "skill-hermes-gateway-dispatcher-troubleshoot",
    "skill-hermes-env-var-naming-trap",
-   "skill-mesh-proxy-gateway"
+   "skill-mesh-proxy-gateway",
+   "tool-hermes"
   ],
   "bridges": [
    "service-hermes-gateway"
@@ -1669,6 +1694,7 @@
   "engine": [
    "service-vault-search-server",
    "skill-marketplace-watcher",
+   "tool-vllm",
    "tool-manim"
   ],
   "doing": [
@@ -1870,9 +1896,6 @@
   "text-to-speech": [
    "service-voice-agent"
   ],
-  "event": [
-   "service-voice-agent"
-  ],
   "visualizer": [
    "service-voice-visualizer",
    "service-marvin-visualizer",
@@ -2009,6 +2032,17 @@
   ],
   "address": [
    "service-tailscaled"
+  ],
+  "tailnet": [
+   "service-tailscaled",
+   "skill-deploy-public-host-verification",
+   "tool-tailscale"
+  ],
+  "vpn": [
+   "service-tailscaled",
+   "skill-gluetun-vpn-kill-switch",
+   "tool-tailscale",
+   "tool-wireguard"
   ],
   "zerotier": [
    "service-zerotier-one"
@@ -4013,7 +4047,8 @@
    "skill-skill-scout",
    "skill-hermes-terminal-backends",
    "skill-unified-memory",
-   "skill-voice-agent-visualizer-bus"
+   "skill-voice-agent-visualizer-bus",
+   "tool-ollama"
   ],
   "skia": [
    "skill-text-to-lottie"
@@ -4977,7 +5012,8 @@
    "skill-godview-gateway-ops",
    "skill-proxiverse-litellm-ops",
    "skill-youtube-transcript-fallback",
-   "skill-mesh-proxy-gateway"
+   "skill-mesh-proxy-gateway",
+   "tool-litellm"
   ],
   "ct207-dashboard-card-deployment": [
    "skill-ct207-dashboard-card-deployment"
@@ -5243,14 +5279,6 @@
   "delegate-task-debug": [
    "skill-delegate-task-debug"
   ],
-  "task": [
-   "skill-delegate-task-debug",
-   "skill-session-end-checklist",
-   "skill-browser-use-automation",
-   "skill-deepseek-planning",
-   "skill-parallel-research-swarm",
-   "skill-pozi-orchestrator"
-  ],
   "subagent": [
    "skill-delegate-task-debug",
    "skill-github",
@@ -5289,9 +5317,6 @@
    "skill-zimaos-service-ops"
   ],
   "anywhere": [
-   "skill-deploy-public-host-verification"
-  ],
-  "tailnet": [
    "skill-deploy-public-host-verification"
   ],
   "hostname": [
@@ -5390,11 +5415,6 @@
   "decide": [
    "skill-email-stack-decision-tree",
    "skill-github-dual-host-routing"
-  ],
-  "email": [
-   "skill-email-stack-decision-tree",
-   "skill-self-host-mail-server",
-   "skill-himalaya"
   ],
   "environment-audit": [
    "skill-environment-audit"
@@ -5507,10 +5527,6 @@
   ],
   "gluetun-based": [
    "skill-gluetun-vpn-kill-switch"
-  ],
-  "vpn": [
-   "skill-gluetun-vpn-kill-switch",
-   "tool-wireguard"
   ],
   "kill-switch": [
    "skill-gluetun-vpn-kill-switch"
@@ -6540,7 +6556,8 @@
   ],
   "router": [
    "skill-slash-commands",
-   "skill-tailscale-mesh-relay-patterns"
+   "skill-tailscale-mesh-relay-patterns",
+   "tool-litellm"
   ],
   "stacks-mesh-complementary-services": [
    "skill-stacks-mesh-complementary-services"
@@ -9657,6 +9674,9 @@
   "hosted": [
    "tool-ollama"
   ],
+  "runner": [
+   "tool-ollama"
+  ],
   "vllm": [
    "tool-vllm"
   ],
@@ -9672,6 +9692,9 @@
    "tool-vllm"
   ],
   "performance": [
+   "tool-vllm"
+  ],
+  "gpu": [
    "tool-vllm"
   ],
   "traffic": [
@@ -9826,6 +9849,10 @@
   "always": [
    "tool-hermes"
   ],
+  "brain": [
+   "tool-hermes",
+   "tool-minimax-m3"
+  ],
   "local-first": [
    "tool-glassy"
   ],
@@ -9937,9 +9964,6 @@
   "mesh's": [
    "tool-minimax-m3",
    "tool-deepseek"
-  ],
-  "brain": [
-   "tool-minimax-m3"
   ],
   "team": [
    "tool-langgraph"
