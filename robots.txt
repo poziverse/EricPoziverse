@@ -6,4 +6,4 @@ User-agent: *
 Allow: /
 Disallow: /account.html
 
-Sitemap: https://e16kyyq6.autoclawai.space/sitemap.xml
+Sitemap: https://h4efyx8v.autoclawai.space/sitemap.xml

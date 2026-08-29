@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>From the Poziverse</title>
-    <link>https://e16kyyq6.autoclawai.space/</link>
+    <link>https://h4efyx8v.autoclawai.space/</link>
     <description>Notes from the edge of the AI frontier — field reports on agents, local-first software, and the machine-readable future.</description>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Aug 2026 12:00:00 GMT</lastBuildDate>
-    <atom:link href="https://e16kyyq6.autoclawai.space/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://h4efyx8v.autoclawai.space/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>One Model, One Job: The Model Fleet</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=model-fleet</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=model-fleet</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=model-fleet</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=model-fleet</guid>
       <pubDate>Sat, 29 Aug 2026 12:00:00 GMT</pubDate>
       <description>Five profiles, five models, one topology: orchestrator, specialist, sweeper, interface. The fleet doctrine, the build story, and the three honest mistakes it taught.</description>
       <category>agents</category><category>routing</category><category>fleet</category><category>ollama</category><category>orchestration</category>
     </item>
     <item>
       <title>A Year of Building the Poziverse Mesh</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=year-of-the-mesh</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=year-of-the-mesh</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=year-of-the-mesh</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=year-of-the-mesh</guid>
       <pubDate>Wed, 12 Aug 2026 12:00:00 GMT</pubDate>
       <description>Four hosts, one tailnet, a fleet of agents. Twelve months of the Proxiverse mesh, in one field report.</description>
       <category>mesh</category><category>infrastructure</category><category>proxiverse</category><category>retrospective</category>
     </item>
     <item>
       <title>The Agent-Native Video Stack: Manim, HyperFrames, and the New Render Pipeline</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=agent-native-video</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=agent-native-video</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=agent-native-video</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=agent-native-video</guid>
       <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
       <description>Four engines, three design-vocabulary skills, one workflow — the blueprint for agent-native visual production.</description>
       <category>manim</category><category>hyperframes</category><category>remotion</category><category>video</category><category>agents</category>
     </item>
     <item>
       <title>Inside Glassy: A Local-First PKM With a Design Language</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=inside-glassy</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=inside-glassy</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=inside-glassy</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=inside-glassy</guid>
       <pubDate>Tue, 28 Jul 2026 12:00:00 GMT</pubDate>
       <description>A brand spec that ships as a system prompt: Glassy’s neurodiversity-first design language, from tokens to daily pipeline.</description>
       <category>glassy</category><category>sqlite</category><category>design-system</category><category>local-first</category><category>pkm</category>
     </item>
     <item>
       <title>Routing LLMs Across the Mesh: A Field Guide</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=llm-routing-mesh</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=llm-routing-mesh</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=llm-routing-mesh</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=llm-routing-mesh</guid>
       <pubDate>Mon, 20 Jul 2026 12:00:00 GMT</pubDate>
       <description>The real topology: who serves what, the failover chain, and the lessons learned when cloud quotas die silently.</description>
       <category>llm</category><category>litellm</category><category>routing</category><category>ollama</category><category>minimax</category>
     </item>
     <item>
       <title>Hermes, the Always-On Agent: Architecture and Hard-Won Lessons</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=hermes-always-on</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=hermes-always-on</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=hermes-always-on</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=hermes-always-on</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
       <description>Fifteen cron jobs, three job modes, one watchdog pattern — the always-on agent, dissected.</description>
       <category>hermes</category><category>agents</category><category>cron</category><category>mcp</category><category>automation</category>
     </item>
     <item>
       <title>Mission Control: Designing a Command Surface for an Agent Fleet</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=mission-control</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=mission-control</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=mission-control</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=mission-control</guid>
       <pubDate>Tue, 30 Jun 2026 12:00:00 GMT</pubDate>
       <description>The iframe-shell SPA at the top of every day: six topnav buttons, auto-rendered zones, nine viewports, zero rot.</description>
       <category>mission-control</category><category>dashboard</category><category>design</category><category>daily-driver</category>
     </item>
     <item>
       <title>OpenMontage: The First Open-Source Agentic Video Studio</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=openmontage</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=openmontage</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=openmontage</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=openmontage</guid>
       <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
       <description>The agent is the control plane: 100+ tools, 12 pipelines, quality gates, budget governance — inside OpenMontage.</description>
       <category>openmontage</category><category>video</category><category>agents</category><category>open-source</category>
     </item>
     <item>
       <title>The 2026 Creator Stack: Tools We Actually Run</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=youtube-creator-stack</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=youtube-creator-stack</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=youtube-creator-stack</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=youtube-creator-stack</guid>
       <pubDate>Mon, 25 May 2026 12:00:00 GMT</pubDate>
       <description>Five layers, 60+ tools scored, 10 archetypes, a ~$85/mo lean start — the decisive creator stack map.</description>
       <category>youtube</category><category>creator</category><category>stack</category><category>content</category><category>2026</category>
     </item>
     <item>
       <title>Whisper in the Browser: WebGPU Speech Transcription</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=webgpu-whisper</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=webgpu-whisper</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=webgpu-whisper</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=webgpu-whisper</guid>
       <pubDate>Sat, 02 May 2026 12:00:00 GMT</pubDate>
       <description>Speech-to-text on the GPU inside your browser — no upload, no server, no transcript in someone else’s logs.</description>
       <category>webgpu</category><category>whisper</category><category>local-first</category><category>privacy</category><category>speech</category>
     </item>
     <item>
       <title>GPU Offloading From a Windows Desktop to Proxmox</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=gpu-offloading</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=gpu-offloading</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=gpu-offloading</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=gpu-offloading</guid>
       <pubDate>Tue, 14 Apr 2026 12:00:00 GMT</pubDate>
       <description>Four ways to turn the Windows desktop into the mesh’s inference server — with real throughput numbers.</description>
       <category>gpu</category><category>proxmox</category><category>infrastructure</category><category>virtualization</category>
     </item>
     <item>
       <title>Packaging Taste: A Motion-Design Meta-Skill</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=design-vocabulary</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=design-vocabulary</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=design-vocabulary</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=design-vocabulary</guid>
       <pubDate>Sun, 22 Mar 2026 12:00:00 GMT</pubDate>
       <description>Three design-vocabulary layers, one auto-installing meta-skill, 46 anti-pattern detectors — taste as infrastructure.</description>
       <category>motion</category><category>design</category><category>skill</category><category>taste</category>
     </item>
     <item>
       <title>Vault Ontology: Keeping 5,500 Notes Navigable</title>
-      <link>https://e16kyyq6.autoclawai.space/article.html?id=vault-ontology</link>
-      <guid isPermaLink="true">https://e16kyyq6.autoclawai.space/article.html?id=vault-ontology</guid>
+      <link>https://h4efyx8v.autoclawai.space/article.html?id=vault-ontology</link>
+      <guid isPermaLink="true">https://h4efyx8v.autoclawai.space/article.html?id=vault-ontology</guid>
       <pubDate>Tue, 10 Feb 2026 12:00:00 GMT</pubDate>
       <description>One vault, one git repo, four sources of truth — the ontology that keeps a knowledge base from becoming a landfill.</description>
       <category>obsidian</category><category>ontology</category><category>notes</category><category>vault</category><category>knowledge</category>

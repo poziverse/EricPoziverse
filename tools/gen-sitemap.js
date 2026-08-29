@@ -5,7 +5,7 @@ const path = require("path");
 const vm = require("vm");
 
 const ROOT = path.resolve(__dirname, "..");
-const SITE = "https://e16kyyq6.autoclawai.space"; // regenerate with final domain when published
+const SITE = "https://h4efyx8v.autoclawai.space"; // regenerate with final domain when published
 const src = fs.readFileSync(path.join(ROOT, "assets", "js", "data.js"), "utf8");
 const ctx = { window: {} };
 vm.createContext(ctx);
