@@ -1,24 +1,24 @@
 {
- "generatedAt": "2026-08-29T22:09:21.353Z",
+ "generatedAt": "2026-08-30T00:15:13.756Z",
  "counts": {
-  "records": 500,
-  "indexWords": 2450
+  "records": 502,
+  "indexWords": 2459
  },
  "byKind": {
   "resource": 12,
   "service": 47,
   "skill": 401,
-  "tool": 40
+  "tool": 42
  },
  "byStatus": {
-  "live": 110,
+  "live": 112,
   "resting": 2,
   "draft": 382,
   "beta": 4,
   "planned": 2
  },
  "byCategory": {
-  "infrastructure": 71,
+  "infrastructure": 73,
   "creation": 15,
   "craft": 13,
   "adhd": 1,
@@ -716,7 +716,8 @@
    "tool-mcp",
    "tool-langgraph",
    "tool-cdp",
-   "tool-vscode"
+   "tool-vscode",
+   "tool-qdrant"
   ],
   "divide": [
    "resource-swarm-operations-guide"
@@ -1042,7 +1043,8 @@
    "skill-ui-ux-pro-max",
    "tool-hyperframes",
    "tool-webgpu",
-   "tool-lottiefiles"
+   "tool-lottiefiles",
+   "tool-openwebui"
   ],
   "serves": [
    "service-dashboard-server",
@@ -1272,7 +1274,8 @@
    "skill-arxiv",
    "skill-vault-search-indexing",
    "skill-web-tool-partial-failure-triage",
-   "skill-skill-scout"
+   "skill-skill-scout",
+   "tool-qdrant"
   ],
   "digests": [
    "service-marketplace-watcher",
@@ -1641,7 +1644,8 @@
    "service-hermes-gateway",
    "service-synapse-mesh",
    "skill-buzz-media-attachments",
-   "skill-ct207-mission-control-debug"
+   "skill-ct207-mission-control-debug",
+   "tool-openwebui"
   ],
   "integrations": [
    "service-hermes-gateway",
@@ -2078,7 +2082,8 @@
    "service-gitea-mesh",
    "service-tsidp",
    "tool-gitea",
-   "tool-tailscale"
+   "tool-tailscale",
+   "tool-openwebui"
   ],
   "gives": [
    "service-tailscaled"
@@ -2231,7 +2236,8 @@
   ],
   "interface": [
    "service-hermes-workspace-ui",
-   "service-hermes-desktop-app"
+   "service-hermes-desktop-app",
+   "tool-openwebui"
   ],
   "working": [
    "service-hermes-workspace-ui",
@@ -2337,7 +2343,8 @@
   ],
   "front": [
    "service-npm-proxy",
-   "tool-litellm"
+   "tool-litellm",
+   "tool-openwebui"
   ],
   "door": [
    "service-npm-proxy"
@@ -2377,7 +2384,9 @@
    "skill-self-host-mail-server",
    "skill-youtube-channel-management-on-mesh",
    "skill-secrets-on-mesh",
-   "tool-gitea"
+   "tool-gitea",
+   "tool-qdrant",
+   "tool-openwebui"
   ],
   "apps": [
    "service-ollama-stack",
@@ -2396,7 +2405,8 @@
   ],
   "vector": [
    "service-ollama-stack",
-   "skill-ct207-memory-hungry-tool-deployment"
+   "skill-ct207-memory-hungry-tool-deployment",
+   "tool-qdrant"
   ],
   "image": [
    "service-ollama-stack",
@@ -2890,7 +2900,8 @@
    "tool-litellm",
    "tool-claude",
    "tool-minimax-m3",
-   "tool-deepseek"
+   "tool-deepseek",
+   "tool-openwebui"
   ],
   "text": [
    "skill-agnes-ai-integration",
@@ -6957,7 +6968,8 @@
    "skill-wiki-audit",
    "skill-document-to-action-items",
    "skill-docx",
-   "skill-grounded-citations"
+   "skill-grounded-citations",
+   "tool-qdrant"
   ],
   "stale": [
    "skill-wiki-audit",
@@ -8472,7 +8484,8 @@
    "skill-prove-claim"
   ],
   "ideas": [
-   "skill-prove-claim"
+   "skill-prove-claim",
+   "tool-qdrant"
   ],
   "their": [
    "skill-prove-claim",
@@ -10221,6 +10234,33 @@
   ],
   "same": [
    "tool-vscode"
+  ],
+  "qdrant": [
+   "tool-qdrant"
+  ],
+  "database": [
+   "tool-qdrant"
+  ],
+  "stores": [
+   "tool-qdrant"
+  ],
+  "numeric": [
+   "tool-qdrant"
+  ],
+  "meaning'": [
+   "tool-qdrant"
+  ],
+  "keywords": [
+   "tool-qdrant"
+  ],
+  "openwebui": [
+   "tool-openwebui"
+  ],
+  "chatgpt-style": [
+   "tool-openwebui"
+  ],
+  "end": [
+   "tool-openwebui"
   ]
  }
 }

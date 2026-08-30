@@ -15,8 +15,8 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
-    "article:llm-routing-mesh",
-    "article:gpu-offloading"
+    "article:gpu-offloading",
+    "article:llm-routing-mesh"
    ],
    "related": [],
    "aliases": [
@@ -106,7 +106,8 @@
    "status": "live",
    "appearsIn": [
     "article:agent-native-video",
-    "article:mission-control"
+    "article:mission-control",
+    "article:youtube-creator-stack"
    ],
    "related": [],
    "aliases": [],
@@ -132,7 +133,8 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
-    "article:agent-native-video"
+    "article:agent-native-video",
+    "article:youtube-creator-stack"
    ],
    "related": [],
    "aliases": [],
@@ -367,7 +369,12 @@
    "level": "foundation",
    "status": "beta",
    "appearsIn": [
-    "article:agent-native-video"
+    "article:agent-native-video",
+    "article:inside-glassy",
+    "article:mission-control",
+    "article:model-fleet",
+    "article:openmontage",
+    "article:youtube-creator-stack"
    ],
    "related": [],
    "aliases": [],
@@ -393,6 +400,7 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
+    "article:agent-native-video",
     "article:design-vocabulary"
    ],
    "related": [],
@@ -472,6 +480,7 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
+    "article:agent-native-video",
     "article:hermes-always-on",
     "article:year-of-the-mesh"
    ],
@@ -504,7 +513,8 @@
    "status": "live",
    "appearsIn": [
     "article:inside-glassy",
-    "article:webgpu-whisper"
+    "article:webgpu-whisper",
+    "article:youtube-creator-stack"
    ],
    "related": [],
    "aliases": [],
@@ -724,8 +734,9 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
-    "article:year-of-the-mesh",
-    "article:llm-routing-mesh"
+    "article:gpu-offloading",
+    "article:llm-routing-mesh",
+    "article:year-of-the-mesh"
    ],
    "related": [],
    "aliases": [],
@@ -803,8 +814,8 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
-    "article:year-of-the-mesh",
-    "article:agent-native-video"
+    "article:agent-native-video",
+    "article:year-of-the-mesh"
    ],
    "related": [],
    "aliases": [
@@ -1074,6 +1085,72 @@
    "aliases": [],
    "provenance": {
     "source": "site articles + operational docs",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-qdrant",
+   "kind": "tool",
+   "name": "Qdrant",
+   "plain": "A vector database - it stores the numeric 'meaning' of documents so agents can search by ideas, not keywords.",
+   "description": "Qdrant runs inside the CT 122 app stack. When the vault-search service needs to find notes by meaning instead of exact words, Qdrant holds those meaning-vectors and answers fast. It is the reason 'find notes about routing' returns the right notes even when the word routing is absent.",
+   "tags": [
+    "search",
+    "ai",
+    "self-hosted"
+   ],
+   "category": "infrastructure",
+   "level": "practitioner",
+   "status": "live",
+   "appearsIn": [
+    "article:llm-routing-mesh"
+   ],
+   "related": [
+    "tool-ollama",
+    "service-ollama-stack"
+   ],
+   "aliases": [
+    "vector database",
+    "vector search"
+   ],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure + CT 122 stack intake",
+    "verified": "2026-08-29"
+   },
+   "links": [],
+   "updated": "2026-08-29",
+   "extra": {}
+  },
+  {
+   "id": "tool-openwebui",
+   "kind": "tool",
+   "name": "OpenWebUI",
+   "plain": "A self-hosted chat interface for AI models - your own private ChatGPT-style front end.",
+   "description": "OpenWebUI runs in the CT 122 app stack and gives every device on the network a clean chat interface to the local models. It pairs with the Ollama server on the same container: the models run locally, the interface runs in your browser, and nothing leaves the network.",
+   "tags": [
+    "ai",
+    "interface",
+    "self-hosted"
+   ],
+   "category": "infrastructure",
+   "level": "foundation",
+   "status": "live",
+   "appearsIn": [
+    "article:llm-routing-mesh"
+   ],
+   "related": [
+    "tool-ollama",
+    "service-ollama-stack"
+   ],
+   "aliases": [
+    "chat ui",
+    "web ui"
+   ],
+   "provenance": {
+    "source": "vault 01_System/02_Infrastructure + CT 122 stack intake",
     "verified": "2026-08-29"
    },
    "links": [],

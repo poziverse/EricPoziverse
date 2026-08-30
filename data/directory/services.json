@@ -14,7 +14,10 @@
    "category": "infrastructure",
    "level": "foundation",
    "status": "live",
-   "appearsIn": [],
+   "appearsIn": [
+    "article:mission-control",
+    "article:year-of-the-mesh"
+   ],
    "related": [],
    "aliases": [
     "mission control",
@@ -146,7 +149,9 @@
    "category": "infrastructure",
    "level": "foundation",
    "status": "live",
-   "appearsIn": [],
+   "appearsIn": [
+    "article:hermes-always-on"
+   ],
    "related": [],
    "aliases": [
     "briefing",
@@ -941,7 +946,8 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
-    "article:hermes-always-on"
+    "article:hermes-always-on",
+    "article:year-of-the-mesh"
    ],
    "related": [],
    "aliases": [],
@@ -970,8 +976,8 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
-    "article:year-of-the-mesh",
-    "article:hermes-always-on"
+    "article:hermes-always-on",
+    "article:year-of-the-mesh"
    ],
    "related": [],
    "aliases": [],
@@ -1027,6 +1033,7 @@
    "level": "foundation",
    "status": "live",
    "appearsIn": [
+    "article:llm-routing-mesh",
     "article:year-of-the-mesh"
    ],
    "related": [],

@@ -275,6 +275,58 @@
   {
    "term": "clip",
    "gloss": "A short video cut from a longer one. Spelled CLIP, it also names a tool that finds images by meaning."
+  },
+  {
+   "term": "Qdrant",
+   "gloss": "A vector database - it stores the numeric 'meaning' of documents so software can search by ideas instead of exact words."
+  },
+  {
+   "term": "n8n",
+   "gloss": "A visual automation tool - drag-and-drop workflows that connect services, surveyed for the mesh and set aside in favor of script-first automation."
+  },
+  {
+   "term": "OpenWebUI",
+   "gloss": "A self-hosted chat interface for AI models - a private, browser-based front end for locally served models."
+  },
+  {
+   "term": "ComfyUI",
+   "gloss": "A node-based image-generation studio - each step of making an image is a box you connect to the next."
+  },
+  {
+   "term": "Memos",
+   "gloss": "A lightweight self-hosted note-taking app in the mesh's app stack."
+  },
+  {
+   "term": "Trilium",
+   "gloss": "A self-hosted hierarchical note-taking app in the mesh's app stack."
+  },
+  {
+   "term": "Linkding",
+   "gloss": "A self-hosted bookmark manager - saves and tags links privately."
+  },
+  {
+   "term": "Langflow",
+   "gloss": "A visual builder for AI workflows - chain models and tools together as diagrams."
+  },
+  {
+   "term": "Pipecat",
+   "gloss": "A framework for real-time voice and video AI agents."
+  },
+  {
+   "term": "SnappyMail",
+   "gloss": "A web-based email reader - the browser interface for the mesh's self-hosted mail."
+  },
+  {
+   "term": "Matrix",
+   "gloss": "An open chat protocol - the standard that the mesh's Synapse server speaks."
+  },
+  {
+   "term": "LangGraph",
+   "gloss": "The framework behind the coding team: a supervisor hands work to a builder, a reviewer checks it, and the loop repeats until it passes."
+  },
+  {
+   "term": "Honcho",
+   "gloss": "The memory service that lets agents remember between conversations - the middle layer of the three-tier memory."
   }
  ]
 }
